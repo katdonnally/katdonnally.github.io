@@ -1,0 +1,17 @@
+/* Font Variables: */ 
+
+// reference for how to do with variable fonts:
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+$bebas-neue: "Bebas Neue", sans-serif;
+$josefin-sans: "Josefin Sans", sans-serif;
