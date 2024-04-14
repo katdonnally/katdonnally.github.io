@@ -15,5 +15,17 @@ layout: default
 	<section class="home__description">
 		<p>{{ site.description }}</p>
 	</section>
+
+	<article class="home__links">
+		<ul class="home-links__list">
+		{% for page in site.pages %}
+		{% if page.title %}
+			<li class="home-links__item">
+				<a href="{{ page.permalink | relative_url }}">{{ page.title }}</a>
+			</li>
+		{% endif %}
+		{% endfor %}
+		</ul>
+	</article>
 	
 </main>
