@@ -1,1 +1,25 @@
 /* Default Layout Styles: */ 
+
+// wraps {{ content }} in default.html
+/*
+.main-content-wrapper {
+	position: relative;
+	padding: 1.5rem 8.33%;
+	@media screen and (max-width: 425px) {
+		padding: 0 4.167%;
+	}
+	@media (min-width: 768px) and (max-width: 900px) {
+		padding: 0 4.167%;
+	}
+	@media screen and (min-width: 1200px) {
+		// add big-screen styles here if find need
+	}
+}
+*/
+
+main.body__main-content-wrapper {
+	padding: 0 8.33%;
+	@media screen and (max-width: 400px) {
+		padding: 0 4.167%;
+	}
+}
