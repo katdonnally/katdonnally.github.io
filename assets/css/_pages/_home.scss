@@ -32,13 +32,28 @@
 }
 
 .home__links {
-
+	position: relative;
 }
 
 .home-links__list {
-
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	// flex-wrap: wrap
+	list-style-type: none;
 }
 
 .home-links__item {
-
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 200px;
+	border: 2px solid black;
+	a {
+		position: relative;
+		display: block;
+		text-decoration: none;
+	}
 }
