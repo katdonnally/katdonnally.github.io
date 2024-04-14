@@ -4,10 +4,26 @@ layout: default
 permalink: /contact/
 ---
 
+{% assign contacts = site.data.contact | sort: 'order' %}
+
 <main class="contact-grid-wrapper">
 	<h1 class="contact__title">Contact</h1>
 
-	<p class="contact__blurb">Nunc ultrices eget ipsum nec dapibus. Nulla in nibh nisi. Duis at lacus ligula. Curabitur tortor quam, interdum id imperdiet ac, dictum in neque. Etiam a fermentum nisl, at dapibus lorem. Quisque imperdiet purus eros, ac lacinia urna interdum eu. Morbi ut bibendum purus. Sed varius, erat ac viverra malesuada, nulla nisl congue odio, ac tincidunt quam urna id massa. Nulla aliquam, neque a cursus accumsan, ante sapien dapibus eros, at mollis orci eros nec est.</p>
+	<p class="contact__blurb">The best way to reach me about questions and commission inquiries is via email (listed below) or by filling out the contact form listed below. Additionally, I post frequent pottery updates on Instagram, the link to which is listed below. Thanks!</p>
+
+	<article class="contact__sm-wrapper">
+		<h2 class="contact-sm__title">Social Media</h2>
+		<ul class="contact-sm__list">
+		{% for contact in contacts %}
+			<li class="contact-sm__item">
+				<img src="{{ contact.img | relative_url }}" alt="{{ contact.alt }}" >
+				<span>{{ contact.platform }}</span>
+				<a href="{{ contact.url }}">{{ contact.username }}</a>
+				
+			</li>
+		{% endfor %}
+		</ul>
+	</article>
 
 	<article class="contact__form-wrapper" style="margin: 0 auto;">
 		<div style="margin: 0 auto; width: 720px;">
@@ -15,3 +31,4 @@ permalink: /contact/
 	</div>
 	</article>
 </main>
+

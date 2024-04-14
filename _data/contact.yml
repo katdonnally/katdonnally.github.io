@@ -1,0 +1,26 @@
+# contact info
+
+# email
+- username: kbdonnally@gmail.com
+  url: 'mailto:kbdonnally@gmail.com'
+  img: 'assets/img/svg/icons/envelope-outline-black.svg'
+  alt: envelope outline
+  platform: Email
+  order: 1
+
+# instagram
+- username: kbdonnally
+  url: https://www.instagram.com/kbdonnally/
+  img: 'assets/img/svg/icons/instagram-black.svg'
+  alt: instagram logo
+  platform: Instagram
+  order: 2
+
+# bluesky
+- username: kbdonnally
+  url: https://bsky.app/profile/kbdonnally.bsky.social
+  img: 'assets/img/svg/icons/bluesky-black.svg'
+  alt: bluesky logo
+  platform: Bluesky
+  order: 3
+
