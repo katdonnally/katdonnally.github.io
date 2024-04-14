@@ -27,7 +27,7 @@ To convert from `.heic` to `.png` or `.jpg`:
 
 
 ```cmd
-mogrify -format png *.*
+magick mogrify -format png *.*
 ```
 
 To write to another directory, use the [path option](https://www.imagemagick.org/script/command-line-options.php#path): `-path directory`
