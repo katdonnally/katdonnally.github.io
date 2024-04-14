@@ -25,7 +25,8 @@ Helpful Stack Overflow answer: [link here](https://stackoverflow.com/questions/1
 
 To convert from `.heic` to `.png` or `.jpg`:
 
-```
+
+```cmd
 mogrify -format png *.*
 ```
 
