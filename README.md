@@ -31,3 +31,12 @@ magick mogrify -format png *.*
 ```
 
 To write to another directory, use the [path option](https://www.imagemagick.org/script/command-line-options.php#path): `-path directory`
+
+### Resizing images
+
+Want to resize images so they're not so unwieldy. Useful links:
+
+- [ImageMagick documentation on resize](https://legacy.imagemagick.org/Usage/resize/)
+- [Digital Ocean walk-through of resize](https://www.digitalocean.com/community/tutorials/workflow-resizing-images-with-imagemagick)
+
+*NB: The Digital Ocean tutorial looks useful for other ImageMagick CLI commands, too.*
