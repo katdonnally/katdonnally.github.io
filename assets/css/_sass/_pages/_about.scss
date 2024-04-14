@@ -1,1 +1,29 @@
 /* About Page Styles: */ 
+
+.about-grid-wrapper {
+	position: relative;
+	display: grid;
+	grid-template-areas: "title pic"
+						 "text pic";
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: auto 1fr;
+}
+
+h1.about__title {
+	grid-area: title;
+}
+
+.about__description-wrapper {
+	grid-area: text;
+	p {
+
+	}
+}
+
+.about__image-wrapper {
+	position: relative;
+	grid-area: pic;
+	img {
+		max-width: 100%;
+	}
+}
