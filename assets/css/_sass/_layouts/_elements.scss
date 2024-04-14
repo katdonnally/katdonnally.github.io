@@ -1,1 +1,98 @@
-/* Generic Elements: */ 
+/* Generic Elements: */
+
+// --------------- 1. Headers -----------------
+
+h1 {
+	line-height: 1;
+}
+
+h2, h3, h4, h5 {
+	line-height: 1.2;
+}
+
+// Desktop & larger
+
+h1 {
+	line-height: 1;
+	margin: .25em 0;
+	padding-bottom: .0625em;
+	font-size: 2.25rem;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+//	text-transform: uppercase;
+//	border-bottom: 1px solid $halfgray;
+	@media screen and (min-width: 600px) {
+		font-size: 2.75rem;
+
+	}
+	@media screen and (min-width: 768px) {
+		font-size: 3.5rem;
+	}
+}
+
+h2 {
+	margin: .75em 0;
+	margin-top: 1.25em;
+	font-size: 2rem;
+}
+
+h3 {
+	margin: 1.25rem 0;
+	font-size: 1.5rem;
+}
+
+h4 {
+	margin: calc(.875rem / 2) 0;
+	font-size: 1.125rem;
+}
+
+// Tablet & smaller
+
+@media screen and (max-width: 768px) {
+	h2 {
+		margin: 1.25rem 0;
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		margin: calc(.875rem / 2) 0;
+		font-size: 1.125rem;
+	}
+
+	h4 {
+		margin: .5rem 0;
+		font-size: 1rem;
+	}
+}
+
+// --------------- 2. Elements -----------------
+
+p, ul, ol, li, blockquote, section, nav, footer {
+	@media screen and (min-width: 900px) {
+		font-size: 1.0625rem;
+	}
+	@media screen and (min-width: 1200px) {
+		font-size: 1.125rem;
+	}
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	//color: $grayblue;
+	transition: .3s color, .3s border;
+	&:hover, &:focus {
+	//	color: $textgray;
+	//	border-bottom: 1px solid $textgray;
+	}
+}
+
+blockquote {
+//	color: $grayblue;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+//	background-color: $halfgray;
+}

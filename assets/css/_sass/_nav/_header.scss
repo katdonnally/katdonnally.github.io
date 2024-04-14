@@ -1,1 +1,26 @@
 /* Header Styles: */ 
+
+.header-wrapper {
+	width: 100vw;
+	height: 60px;
+	background-color: black;
+}
+
+.header__link-list {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	list-style-type: none;
+}
+
+.header-link-list__item {
+	margin: 0;
+	a {
+		color: white;
+		transition: .3s color;
+		&:hover, &:focus {
+			color: red;
+		}
+	}
+}
