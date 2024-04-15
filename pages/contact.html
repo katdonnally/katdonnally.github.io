@@ -17,7 +17,7 @@ permalink: /contact/
 		{% for contact in contacts %}
 			<li class="contact-sm__item">
 				<img src="{{ contact.img | relative_url }}" alt="{{ contact.alt }}" >
-				<span>{{ contact.platform }}</span>
+				<span>{{ contact.platform }}:</span>
 				<a href="{{ contact.url }}">{{ contact.username }}</a>
 				
 			</li>
@@ -25,10 +25,10 @@ permalink: /contact/
 		</ul>
 	</article>
 
-	<article class="contact__form-wrapper" style="margin: 0 auto;">
-		<div style="margin: 0 auto; width: 720px;">
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9E9PH8adB065pTDrq108R-MYkZD5mZ5VBNWuisTp13jaRIg/viewform?embedded=true" width="720" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-	</div>
+	<article class="contact__form-wrapper">
+		<div style="">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9E9PH8adB065pTDrq108R-MYkZD5mZ5VBNWuisTp13jaRIg/viewform?embedded=true" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		</div>
 	</article>
 </main>
 
