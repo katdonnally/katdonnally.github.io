@@ -1,41 +1,69 @@
 /* Contact Page Styles: */ 
 
 .contact-grid-wrapper {
-
+	position: relative;
+	// max-width: 900px;
+	@media screen and (min-width: 900px) {
+		margin: 1.5rem auto;
+		max-width: 900px;
+	}
 }
 
 .contact__title {
-
+	border-bottom: 4px solid $dim-gray;
 }
 
 .contact__blurb {
-
+	position: relative;
+	width: 100%;
+	
 }
 
 .contact__sm-wrapper {
+//	max-width: 900px;
+	padding: 1.5rem;
+	border: 4px solid $dim-gray;
 
 }
 
 .contact-sm__title {
-
+	margin: 0;
+	margin-bottom: 1rem;
 }
 
 .contact-sm__list {
+	margin: 0;
+	padding-left: 0;
 	list-style-type: none;
 }
 
 .contact-sm__item {
+	display: flex;
 	img {
-		height: 24px;
+		height: 1.5rem;
+		padding-right: 1rem;
 	}
 	span {
-
+		font-weight: bold;
+		padding-right: 1rem;
 	}
 	a {
-
+		color: $african-violet;
+		transition: .3s color;
+		&:hover, &:focus {
+			color: black;
+		}
 	}
 }
 
 .contact__form-wrapper {
-
+	div {
+		iframe {
+			width: 100%;
+			height: 1200px;
+			@media screen and (max-width: 700px) {
+				height: 1250px;
+			}
+		}
+	}
 }
