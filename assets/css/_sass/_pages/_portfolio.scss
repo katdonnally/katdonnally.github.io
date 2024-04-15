@@ -8,20 +8,46 @@
 
 }
 
+// selector types
+
+article[class*="portfolio__section"] {
+
+}
+
 .portfolio__section--bowls {
 
 }
 
+.portfolio__section--jars {
+
+}
+
+.portfolio__section--mugs {
+
+}
+
+.portfolio__section--planters {
+
+}
+
+.portfolio__section--vases {
+
+}
+
+// inside each section:
+
 .portfolio-section-title {
+	font-family: $oswald;
+}
+
+ul.portfolio__metadata-wrapper {
 
 }
 
-.portfolio__metadata-wrapper {
+li.portfolio-metadata__image {
+	img {
 
-}
-
-.portfolio-metadata__image {
-
+	}
 }
 
 .portfolio-metadata__name {
@@ -29,5 +55,12 @@
 }
 
 .portfolio-metadata__details {
+	span {
+		&:first-of-type {
 
+		}
+		&:nth-of-type(2) {
+			color: red;
+		}
+	}
 }
