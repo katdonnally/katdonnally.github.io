@@ -16,63 +16,73 @@ permalink: /portfolio/
 
 
 	<article class="portfolio__section--bowls">
-		<h2 class="portfolio-section-title" >Bowls</h2>
-		{% for bowl in bowls %}
-		{% assign image = bowl.imgs.first %}
-		<ul class="portfolio__metadata-wrapper" >
-			<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/bowls/' | append: image | relative_url }}" alt="{{ bowl.name }}" style="height: 50px;"></li>
-			<li class="portfolio-metadata__name">{{ bowl.name }}</li>
-			<li class="portfolio-metadata__details"><span>{{ bowl.clay | capitalize }}</span>, <span>{{ bowl.year }}</span></li>
-		</ul>
-		{% endfor %}
+		<h2 class="portfolio-section__title" >Bowls</h2>
+		<div class="portfolio-section__data-wrapper">
+			{% for bowl in bowls %}
+			{% assign image = bowl.imgs.first %}
+			<ul class="portfolio__metadata-wrapper" >
+				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/bowls/' | append: image | relative_url }}" alt="{{ bowl.name }}"></li>
+				<li class="portfolio-metadata__name">{{ bowl.name }}</li>
+				<li class="portfolio-metadata__details"><span>{{ bowl.clay | capitalize }}</span>, <span>{{ bowl.year }}</span></li>
+			</ul>
+			{% endfor %}
+		</div>
 	</article>
 
 	<article class="portfolio__section--jars">
-		<h2 class="portfolio-section-title" >Jars</h2>
-		{% for jar in jars %}
-		{% assign image = jar.imgs.first %}
-		<ul class="portfolio__metadata-wrapper" >
-			<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/jars/' | append: image | relative_url }}" alt="{{ jar.name }}" style="height: 50px;"></li>
-			<li class="portfolio-metadata__name">{{ jar.name }}</li>
-			<li class="portfolio-metadata__details"><span>{{ jar.clay | capitalize }}</span>, <span>{{ jar.year }}</span></li>
-		</ul>
-		{% endfor %}
+		<h2 class="portfolio-section__title" >Jars</h2>
+		<div class="portfolio-section__data-wrapper">
+			{% for jar in jars %}
+			{% assign image = jar.imgs.first %}
+			<ul class="portfolio__metadata-wrapper" >
+				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/jars/' | append: image | relative_url }}" alt="{{ jar.name }}"></li>
+				<li class="portfolio-metadata__name">{{ jar.name }}</li>
+				<li class="portfolio-metadata__details"><span>{{ jar.clay | capitalize }}</span>, <span>{{ jar.year }}</span></li>
+			</ul>
+			{% endfor %}
+		<div class="portfolio-data-wrapper">
 	</article>
 
 	<article class="portfolio__section--mugs">
-		<h2 class="portfolio-section-title" >Mugs</h2>
-		{% for mug in mugs %}
-		{% assign image = mug.imgs.first %}
-		<ul class="portfolio__metadata-wrapper" >
-			<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/mugs/' | append: image | relative_url }}" alt="{{ mug.name }}" style="height: 50px;"></li>
-			<li class="portfolio-metadata__name">{{ mug.name }}</li>
-			<li class="portfolio-metadata__details"><span>{{ mug.clay | capitalize }}</span>, <span>{{ mug.year }}</span></li>
-		</ul>
-		{% endfor %}
+		<h2 class="portfolio-section__title" >Mugs</h2>
+		<div class="portfolio-section__data-wrapper">
+			{% for mug in mugs %}
+			{% assign image = mug.imgs.first %}
+			<ul class="portfolio__metadata-wrapper" >
+				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/mugs/' | append: image | relative_url }}" alt="{{ mug.name }}"></li>
+				<li class="portfolio-metadata__name">{{ mug.name }}</li>
+				<li class="portfolio-metadata__details"><span>{{ mug.clay | capitalize }}</span>, <span>{{ mug.year }}</span></li>
+			</ul>
+			{% endfor %}
+		</div>
 	</article>
 
 	<article class="portfolio__section--planters">
-		<h2 class="portfolio-section-title" >Planters</h2>
-		{% for planter in planters %}
-		{% assign image = planter.imgs.first %}
-		<ul class="portfolio__metadata-wrapper" >
-			<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/planters/' | append: image | relative_url }}" alt="{{ planter.name }}" style="height: 50px;"></li>
-			<li class="portfolio-metadata__name">{{ planter.name }}</li>
-			<li class="portfolio-metadata__details"><span>{{ planter.clay | capitalize }}</span>, <span>{{ planter.year }}</span></li>
-		</ul>
-		{% endfor %}
+		<h2 class="portfolio-section__title" >Planters</h2>
+		<div class="portfolio-section__data-wrapper">
+			{% for planter in planters %}
+			{% assign image = planter.imgs.first %}
+			<ul class="portfolio__metadata-wrapper" >
+				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/planters/' | append: image | relative_url }}" alt="{{ planter.name }}"></li>
+				<li class="portfolio-metadata__name">{{ planter.name }}</li>
+				<li class="portfolio-metadata__details"><span>{{ planter.clay | capitalize }}</span>, <span>{{ planter.year }}</span></li>
+			</ul>
+			{% endfor %}
+		</div>
 	</article>
 
 	<article class="portfolio__section--vases">
-		<h2 class="portfolio-section-title" >Vases</h2>
-		{% for vase in vases %}
-		{% assign image = vase.imgs.first %}
-		<ul class="portfolio__metadata-wrapper" >
-			<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/vases/' | append: image | relative_url }}" alt="{{ vase.name }}" style="height: 50px;"></li>
-			<li class="portfolio-metadata__name">{{ vase.name }}</li>
-			<li class="portfolio-metadata__details"><span>{{ vase.clay | capitalize }}</span>, <span>{{ vase.year }}</span></li>
-		</ul>
-		{% endfor %}
+		<h2 class="portfolio-section__title" >Vases</h2>
+		<div class="portfolio-section__data-wrapper">
+			{% for vase in vases %}
+			{% assign image = vase.imgs.first %}
+			<ul class="portfolio__metadata-wrapper" >
+				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/vases/' | append: image | relative_url }}" alt="{{ vase.name }}"></li>
+				<li class="portfolio-metadata__name">{{ vase.name }}</li>
+				<li class="portfolio-metadata__details"><span>{{ vase.clay | capitalize }}</span>, <span>{{ vase.year }}</span></li>
+			</ul>
+			{% endfor %}
+		</div>
 	</article>
 
 </main>

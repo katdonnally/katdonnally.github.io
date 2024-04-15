@@ -36,31 +36,49 @@ article[class*="portfolio__section"] {
 
 // inside each section:
 
-.portfolio-section-title {
+.portfolio-section__title {
 	font-family: $oswald;
 }
 
-ul.portfolio__metadata-wrapper {
+.portfolio-section__data-wrapper {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	//justify-content: space-between;
+	ul {
+		padding-right: 1.5rem;
+		li {
 
+		}
+	}
+}
+
+ul.portfolio__metadata-wrapper {
+	min-width: 300px;
+	padding-left: 0;
+	list-style-type: none;
 }
 
 li.portfolio-metadata__image {
 	img {
-
+		height: 300px;
 	}
 }
 
 .portfolio-metadata__name {
-
+	font-weight: bold;
 }
 
 .portfolio-metadata__details {
+	font-family: $inconsolata;
+
 	span {
+		color: $dim-gray;
 		&:first-of-type {
 
 		}
 		&:nth-of-type(2) {
-			color: red;
+			
 		}
 	}
 }
