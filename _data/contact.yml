@@ -9,7 +9,7 @@
   order: 1
 
 # instagram
-- username: kbdonnally
+- username: '@kbdonnally'
   url: https://www.instagram.com/kbdonnally/
   img: 'assets/img/svg/icons/instagram-black.svg'
   alt: instagram logo
@@ -17,7 +17,7 @@
   order: 2
 
 # bluesky
-- username: kbdonnally
+- username: '@kbdonnally.bsky.social'
   url: https://bsky.app/profile/kbdonnally.bsky.social
   img: 'assets/img/svg/icons/bluesky-black.svg'
   alt: bluesky logo
