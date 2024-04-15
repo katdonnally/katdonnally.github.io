@@ -1,0 +1,88 @@
+# vases
+# NB: 'name' will also be used for 'alt'
+
+- name: Blue rutile mini vase
+  imgs:
+    - blue-rutile-mini-vase-01.png
+    - blue-rutile-mini-vase-02.png
+  clay: white stoneware
+  year: 2023
+  order: 1
+
+- name: Large black & white checkerboard vase
+  imgs:
+    - checkerboard-vase-01.png
+    - checkerboard-vase-02.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Large interlocking squares vase
+  imgs:
+    - interlocking-vase-01.png
+    - interlocking-vase-02.png
+    - interlocking-vase-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Medium jade & black vase
+  imgs:
+    - jade-black-vase-01.png
+    - jade-black-vase-02.png
+    - jade-black-vase-03.png
+  clay: white stoneware
+  year: 2023
+  order: 1
+
+- name: Large striped jade vase
+  imgs:
+    - large-jade-vase-01.png
+    - large-jade-vase-02.png
+    - large-jade-vase-03.png
+  clay: hazelnut brown stoneware
+  year: 2024
+  order: 1
+
+- name: Lavender bubble bud vases
+  imgs:
+    - lavender-vases-01-01.png
+    - lavender-vases-01-02.png
+    - lavender-vases-01-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Light blue bud vase
+  imgs:
+    - light-blue-bud-vase-01.png
+    - light-blue-bud-vase-02.png
+  clay: white stoneware
+  year: 2023
+  order: 1
+
+- name: Medium jade striped vase
+  imgs:
+    - small-jade-vase-01.png
+    - small-jade-vase-02.png
+  clay: hazelnut brown stoneware
+  year: 2024
+  order: 1
+
+- name: Medium brown black & white splatter vase
+  imgs:
+    - small-splatter-vase-01.png
+    - small-splatter-vase-02.png
+  clay: hazelnut brown stoneware
+  year: 2024
+  order: 1
+
+- name: Turquoise & black bud vase
+  imgs:
+    - turq-black-bud-vase-01.png
+    - turq-black-bud-vase-02.png
+    - turq-black-bud-vase-03.png
+  clay: white stoneware
+  year: 2023
+  order: 1
+

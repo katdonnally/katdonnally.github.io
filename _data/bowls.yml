@@ -1,0 +1,26 @@
+# bowls
+# NB: 'name' will also be used for 'alt'
+
+- name: Black geometric bowl
+  imgs:
+    - black-geometric-bowl-01-01.png
+    - black-geometric-bowl-01-02.png
+    - black-geometric-bowl-01-03.png
+  clay: hazelnut brown stoneware
+  year: 2024
+
+- name: Turquoise berry bowl
+  imgs:
+    - turq-berry-bowl-01-01.png
+    - turq-berry-bowl-01-02.png
+    - turq-berry-bowl-01-03.png
+  clay: white stoneware
+  year: 2024
+
+- name: White geometric bowl
+  imgs:
+    - white-geometric-bowl-01-01.png
+    - white-geometric-bowl-01-02.png
+    - white-geometric-bowl-01-03.png
+  clay: hazelnut brown stoneware
+  year: 2024

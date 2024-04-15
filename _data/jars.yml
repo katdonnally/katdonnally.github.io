@@ -1,0 +1,63 @@
+# jars
+# NB: 'name' will also be used for 'alt'
+
+- name: Small black geometric jar
+  imgs:
+    - black-geometric-jar-01-01.png
+    - black-geometric-jar-01-02.png
+    - black-geometric-jar-01-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Black & white garlic jars # the & might break things
+  imgs:
+    - garlic-jars-01.png
+    - garlic-jars-02.png
+    - garlic-jars-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Small jade jar
+  imgs:
+    - jade-jar-01.png
+    - jade-jar-02.png
+    - jade-jar-03.png
+  clay: hazelnut brown stoneware
+  year: 2024
+  order: 1
+
+- name: Small mint jar
+  imgs:
+    - mint-jar-01.png
+    - mint-jar-02.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Large turquoise flux jar
+  imgs:
+    - turq-flux-jar-01.png
+    - turq-flux-jar-02.png
+    - turq-flux-jar-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Small wasabi green jar
+  imgs:
+    - wasabi-jar-01.png
+    - wasabi-jar-01.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Small white geometric jar
+  imgs:
+    - white-geometric-jar-01-01.png
+    - white-geometric-jar-01-02.png
+    - white-geometric-jar-01-03.png
+  clay: hazelnut brown stoneware  
+  year: 2024
+  order: 1

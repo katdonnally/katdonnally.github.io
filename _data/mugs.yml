@@ -1,0 +1,152 @@
+- name: Bat cauldron mugs
+  imgs:
+    - bat-mugs-01.png
+    - bat-mugs-02.png
+  clay: white stoneware
+  year: 2023
+  order: 1
+
+- name: Large blue tulip mug
+  imgs:
+    - blue-tulip-mug-01-01.png
+    - blue-tulip-mug-01-02.png
+    - blue-tulip-mug-01-03.png
+    - blue-tulip-mug-01-04.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Criss-cross stripe mug
+  imgs:
+    - criss-cross-mug-01.png
+    - criss-cross-mug-02.png
+    - criss-cross-mug-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Jade green cup
+  imgs:
+    - green-cup-01.png
+    - green-cup-02.png
+  clay: white stoneware
+  year: 2023
+  order: 1
+
+- name: Medium orange tulip mug
+  imgs:
+    - orange-tulip-mug-01-01.png
+    - orange-tulip-mug-01-02.png
+    - orange-tulip-mug-01-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Large plant mug
+  imgs:
+    - plant-mug-01-01.png
+    - plant-mug-01-02.png
+    - plant-mug-01-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Pumpkin mugs
+  imgs:
+    - pumpkin-mugs-01.png
+    - pumpkin-mugs-02.png
+    - pumpkin-mugs-03.png
+  clay: white stoneware
+  year: 2023
+  order: 1
+
+- name: Medium purple tulip mug
+  imgs:
+    - purple-tulip-mug-01-01.png
+    - purple-tulip-mug-01-02.png
+    - purple-tulip-mug-01-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Medium red tulip mug
+  imgs:
+    - red-tulip-mug-01-01.png
+    - red-tulip-mug-01-02.png
+    - red-tulip-mug-01-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Large red tulip mug
+  imgs:
+    - red-tulip-mug-02-01.png
+    - red-tulip-mug-02-02.png
+    - red-tulip-mug-02-03.png
+    - red-tulip-mug-02-04.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Black & white scallop mug
+  imgs:
+    - scallop-mug-01.png
+    - scallop-mug-02.png
+    - scallop-mug-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Seaweed & obsidian angular mugs
+  imgs:
+    - seaweed-angular-mugs-01.png
+    - seaweed-angular-mugs-02.png
+    - seaweed-angular-mugs-03.png
+  clay: white stoneware
+  year: 2023
+  order: 1
+
+- name: Matte black tree mug
+  imgs:
+    - tree-mug-black-01.png
+    - tree-mug-black-02.png
+    - tree-mug-black-03.png
+  clay: hazelnut brown stoneware
+  year: 2024
+  order: 1
+
+- name: Matte white tree mug
+  imgs:
+    - tree-mug-white-01.png
+    - tree-mug-white-02.png
+    - tree-mug-white-03.png
+  clay: hazelnut brown stoneware
+  year: 2024
+  order: 1
+
+- name: Turquoise flux cup
+  imgs:
+    - turq-flux-cup-01.png
+    - turq-flux-cup-02.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Abstract bee mugs
+  imgs:
+    - white-bee-mugs-01.png
+    - white-bee-mugs-02.png
+    - white-bee-mugs-03.png
+  clay: white stoneware
+  year: 2024
+  order: 1
+
+- name: Matte yellow bee mugs
+  imgs:
+    - yellow-bee-mugs-01.png
+    - yellow-bee-mugs-02.png
+    - yellow-bee-mugs-03.png
+    - yellow-bee-mugs-04.png
+  clay: white stoneware
+  year: 2024
+  order: 1
