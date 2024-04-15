@@ -3,3 +3,29 @@ title: Portfolio
 layout: default
 permalink: /portfolio/
 ---
+
+<main class="portfolio-wrapper">
+
+	<h1 class="portfolio__title">Portfolio</h1>
+
+	{% assign bowls = site.data.bowls %}
+	{% assign jars = site.data.jars %}
+	{% assign mugs = site.data.mugs %} <!-- also cups -->
+	{% assign planters = site.data.planters %}
+	{% assign vases = site.data.planters %}
+
+
+	<article class="portfolio__section--bowls">
+		<h2 class="portfolio-section-title" >Bowls</h2>
+		{% for bowl in bowls %}
+		{% assign image = bowl.imgs.first %}
+		<ul class="portfolio__metadata-wrapper" >
+			<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/bowls/' | append: image | relative_url }}" alt="{{ bowl.name }}" style="height: 50px;"></li>
+			<li class="portfolio-metadata__name">{{ bowl.name }}</li>
+			<li class="portfolio-metadata__details">{{ bowl.clay | capitalize }}, {{ bowl.year }}</li>
+		</ul>
+		{% endfor %}
+	</article>
+
+</main>
+
