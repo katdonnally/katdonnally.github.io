@@ -2,7 +2,18 @@
 
 .contact-grid-wrapper {
 	position: relative;
-	// max-width: 900px;
+	display: grid;
+	grid-template-areas: "title title"
+						 "about sm"
+						 "form form";
+	grid-template-columns: 1fr 1fr;
+	@media screen and (max-width: 900px) {
+		grid-template-areas: "title"
+							 "about"
+							 "sm"
+							 "form";
+		grid-template-columns: 1fr;
+	}
 	@media screen and (min-width: 900px) {
 		margin: 1.5rem auto;
 		max-width: 900px;
@@ -10,19 +21,27 @@
 }
 
 .contact__title {
+	grid-area: title;
 	border-bottom: 4px solid $dim-gray;
 }
 
 .contact__blurb {
+	grid-area: about;
 	position: relative;
 	width: 100%;
-	
+	@media screen and (min-width: 900px) {
+		padding-right: 1rem;
+	}
 }
 
 .contact__sm-wrapper {
-//	max-width: 900px;
+	grid-area: sm;
 	padding: 1.5rem;
+	margin: 1rem 0;
 	border: 4px solid $dim-gray;
+	@media screen and (min-width: 900px) {
+		margin: 1.5rem 0;
+	}
 
 }
 
@@ -57,12 +76,18 @@
 }
 
 .contact__form-wrapper {
+	grid-area: form;
+	margin: 1.5rem 0;
 	div {
 		iframe {
 			width: 100%;
 			height: 1200px;
 			@media screen and (max-width: 700px) {
 				height: 1250px;
+			}
+			@media screen and (min-width: 900px) {
+				width: 900px;
+				margin: 1.5rem 0;
 			}
 		}
 	}
