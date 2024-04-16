@@ -40,7 +40,7 @@
 h3.footer-logo__name {
 	color: white;
 	text-wrap: nowrap;
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 768px) {
 		padding-top: .75rem;
 		padding-bottom: .25rem;
 	}
@@ -91,6 +91,13 @@ h3.footer-logo__name {
 	align-items: flex-end;
 	margin-bottom: 0;
 	padding-right: 1rem;
+	@media screen and (max-width: 600px) {
+		justify-content: center;
+		padding-right: 0;
+	}
+	@media screen and (min-width: 900px) {
+		padding-top: 1rem;
+	}
 }
 
 .footer-pottery__image {
@@ -98,8 +105,15 @@ h3.footer-logo__name {
 	margin-right: 1rem;
 	@media screen and (max-width: 600px) {
 		width: 40px;
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
 	@media screen and (min-width: 900px) {
 		width: 65px;
+		
+	}
+	@media screen and (min-width: 1100px) {
+		margin-right: 1.5rem;
 	}
 }
