@@ -1,2 +1,16 @@
 <!-- footer content -->
-<h1>Footer</h1>
+
+<footer class="footer-wrapper">
+	<ul class="footer__links-list">
+		<li class="footer-link-list__item"><a href="{{ site.url }}">Home</a></li>
+		<li class="footer-link-list__item"><a href="{{ '/portfolio' | relative_url }}">Portfolio</a></li>
+		<li class="footer-link-list__item"><a href="{{ '/about' | relative_url }}">About</a></li>
+		<li class="footer-link-list__item"><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+	</ul>
+
+	<section class="footer__pottery-images">
+		<img class="footer-pottery__image" src="{{ 'assets/img/svg/pottery/greek-vase-white.svg' | relative_url }}" alt="White curvy vase">
+		<img class="footer-pottery__image" src="{{ 'assets/img/svg/pottery/bowl-white.svg' | relative_url }}" alt="White bowl">
+		<img class="footer-pottery__image" src="{{ 'assets/img/svg/pottery/mug-white.svg' | relative_url }}" alt="White straight mug">
+	</section>
+</footer>
