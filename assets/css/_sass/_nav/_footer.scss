@@ -1,1 +1,119 @@
 /* Footer Styles: */ 
+
+.footer-wrapper {
+	position: relative;
+	display: grid;
+	grid-template-areas: "..... logo ....."
+						 "links links links"
+						 "..... ..... svgs";
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: black;
+	min-height: 50vh;
+	@media screen and (max-width: 600px) {
+		grid-template-areas: "logo"
+							 "links"
+							 "svgs";
+		grid-template-columns: 1fr;
+	}
+}
+
+.footer__logo {
+	grid-area: logo;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2rem;
+	img {
+
+		height: 50px;
+	}
+	@media screen and (max-width: 600px) {
+	//	padding-bottom: 1.5rem;
+		img {
+			height: 40px;
+
+		}
+	}
+}
+
+h3.footer-logo__name {
+	color: white;
+	text-wrap: nowrap;
+	@media screen and (max-width: 768px) {
+		padding-top: .75rem;
+		padding-bottom: .25rem;
+	}
+	@media screen and (min-width: 900px) {
+		font-size: 2rem;
+	}
+}
+
+.footer__links-list {
+	grid-area: links;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: .5rem auto 1rem auto;
+	padding-left: 0;
+	padding: 1rem;
+	list-style-type: none;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+.footer-link-list__item {
+	padding: 0 1rem;
+	color: white;
+	a {
+		color: white;
+		font-family: $inconsolata;
+		transition: color .3s;
+		&:hover, &:focus {
+			color: $african-violet;
+		}
+
+	}
+	@media screen and (min-width: 600px) {
+		font-size: 1.25rem;
+	}
+	@media screen and (min-width: 900px) {
+		font-size: 1.5rem;
+	}
+	
+}
+
+.footer__pottery-images {
+	grid-area: svgs;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-bottom: 0;
+	padding-right: 1rem;
+	@media screen and (max-width: 600px) {
+		justify-content: center;
+		padding-right: 0;
+	}
+	@media screen and (min-width: 900px) {
+		padding-top: 1rem;
+	}
+}
+
+.footer-pottery__image {
+	width: 50px;
+	margin-right: 1rem;
+	@media screen and (max-width: 600px) {
+		width: 40px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+	@media screen and (min-width: 900px) {
+		width: 65px;
+		
+	}
+	@media screen and (min-width: 1100px) {
+		margin-right: 1.5rem;
+	}
+}
