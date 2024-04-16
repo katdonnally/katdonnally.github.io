@@ -3,14 +3,23 @@
 .about-grid-wrapper {
 	position: relative;
 	display: grid;
-	grid-template-areas: "title pic"
+	grid-template-areas: "title title"
 						 "text pic";
 	grid-template-columns: 3fr 2fr;
 	grid-template-rows: auto 1fr;
+	max-width: 1200px;
+	@media screen and (max-width: 768px) {
+		grid-template-areas: "title"
+							 "text"
+							 "pic";
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto;
+	}
 }
 
 h1.about__title {
 	grid-area: title;
+	border-bottom: 4px solid $dim-gray;
 }
 
 .about__description-wrapper {
@@ -18,12 +27,37 @@ h1.about__title {
 	p {
 
 	}
+	@media screen and (max-width: 768px) {
+		padding-bottom: 1.5rem;
+	}
+	@media screen and (min-width: 769px) {
+		padding-right: 1.5rem;
+	}
 }
 
 .about__image-wrapper {
-	position: relative;
 	grid-area: pic;
+	position: relative;
+	margin: 0;
+	
 	img {
 		max-width: 100%;
+		box-shadow: 6px 6px black;
+	//	border: 4px solid black;
+	}
+	figcaption {
+		padding-top: .5rem;
+		font-family: $inconsolata;
+		font-style: italic;
+		color: $dim-gray;
+	}
+	 @media screen and (max-width: 768px) {
+		img {
+			box-shadow: 0 0 black;
+			border: 4px solid black;
+		}
+	}
+	@media screen and (min-width: 769px) {
+		margin-top: 1rem;
 	}
 }
