@@ -133,4 +133,9 @@ li.home-links__item {
 	@media screen and (max-width: 425px) {
 		width: 100%;
 	}
+	@media screen and (min-width: 426px) {
+		&:nth-of-type(2) {
+			margin: 0 1rem;
+		}
+	}
 }
