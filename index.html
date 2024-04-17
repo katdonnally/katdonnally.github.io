@@ -19,9 +19,7 @@ layout: default
 	{% for page in site.pages %}
 	{% if page.title %}
 		<li class="home-links__item">
-			<div class="home-link__wrapper">
-				<a href="{{ page.permalink | relative_url }}">{{ page.title }}</a>
-			</div>
+			<a href="{{ page.permalink | relative_url }}">{{ page.title }}</a>
 		</li>
 	{% endif %}
 	{% endfor %}

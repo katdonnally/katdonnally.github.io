@@ -15,6 +15,26 @@
 // - Order:   least-to-most specific, so cascade flows properly
 //            (NB: vars first b/c can't invoke b/f define)
 
+/* This is to use Liquid templating in CSS so that
+   the links to background images actually work */
+.home-links__item {
+	background-size: 100%;
+	//about
+	&:nth-of-type(1) {
+		background-image: url('{{ site.baseurl }}/assets/img/pottery/mugs/purple-tulip-mug-01-03.png');
+		background-size: 105%;
+		background-position: left center;
+	}
+	//contact
+	&:nth-of-type(2) {
+		background-image: url('{{ site.baseurl }}/assets/img/pottery/bowls/turq-berry-bowl-01-01.png');
+	}
+	//portfolio
+	&:nth-of-type(3) {
+		background-image: url('{{ site.baseurl }}/assets/img/background-pics/double-jars.png');
+	}
+}
+
 // vars:
 @import '_vars/colors';
 @import '_vars/fonts';
