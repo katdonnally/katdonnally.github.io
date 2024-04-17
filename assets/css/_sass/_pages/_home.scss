@@ -22,10 +22,14 @@
 	grid-area: title;
 	text-transform: uppercase;
 	font-weight: 700;
+	font-size: 2.5rem;
 	margin-bottom: 0;
 	span {
 		color: $dim-gray;
 		line-height: .9;
+	}
+	@media screen and (min-width: 600px) {
+		font-size: 3.25rem;
 	}
 	@media screen and (min-width: 900px) {
 		font-size: 4rem;
@@ -66,7 +70,7 @@ img.home-pottery__image {
 	p {
 		font-size: 1.5rem;	
 		@media screen and (max-width: 600px) {
-			font-size: 1rem;
+			font-size: 1.25rem;
 		}
 		@media screen and (min-width: 900px) {
 			font-size: 1.75rem;
