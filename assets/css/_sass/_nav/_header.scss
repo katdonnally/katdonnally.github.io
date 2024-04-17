@@ -23,8 +23,21 @@
 	margin: 0;
 	padding-right: 1rem;
 	&:first-of-type {
-		position: relative;
+		position: absolute;
+		left: 0;
 		margin-right: auto;
+		a {
+			display: block;
+			height: 30px;
+		}
+		svg {
+			height: 30px;
+			fill: $african-violet;
+			transition: .3s fill;
+			&:hover, &:focus {
+				fill: white;
+			}
+		}
 	}
 	a {
 		color: white;
@@ -32,5 +45,6 @@
 		&:hover, &:focus {
 			color: $african-violet;
 		}
+
 	}
 }
