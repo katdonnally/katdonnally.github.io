@@ -26,6 +26,10 @@
 		position: absolute;
 		left: 0;
 		margin-right: auto;
+		a {
+			display: block;
+			height: 30px;
+		}
 		svg {
 			height: 30px;
 			fill: $african-violet;
