@@ -15,7 +15,8 @@
 // - Order:   least-to-most specific, so cascade flows properly
 //            (NB: vars first b/c can't invoke b/f define)
 
-$baseurl: "{{ site.baseurl | absolute_url}}";
+/* This is to use Liquid templating in CSS so that
+   the links to background images actually work */
 .home-links__item {
 	background-size: 100%;
 	//about
