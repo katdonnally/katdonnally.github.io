@@ -42,7 +42,7 @@ article[class*="portfolio__section"] {
 
 .portfolio-section__data-wrapper {
 	position: relative;
-	column-count: 3;
+	column-width: 300px;
 	break-inside: avoid-column;
 	ul {
 		break-inside: avoid-column;
