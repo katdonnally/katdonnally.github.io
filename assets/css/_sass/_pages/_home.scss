@@ -104,18 +104,8 @@ li.home-links__item {
 	width: 33%;
 	aspect-ratio: 1/1;
 	border: 2px solid black;
-	@media screen and (max-width: 425px) {
-		width: 100%;
-	}
-	@media screen and (min-width: 426px) {
-		&:nth-of-type(2) {
-			margin: 0 1rem;
-		}
-	}
-}
-
-.home-link__wrapper {
-	position: relative;
+	background-color: black;
+//	background-image: url();
 	a {
 		position: relative;
 		display: block;
