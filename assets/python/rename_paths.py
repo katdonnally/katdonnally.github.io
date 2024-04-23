@@ -2,39 +2,40 @@
 # renames image paths affected by `srcset` requirements
 
 import os
-import os.path as ospath
 
-current_path = os.getcwd()
 img_dir = "C:/Users/Katherine/OneDrive/Clay/katdonnally.github.io/assets/img/pottery/"
 
-bowl_dir = img_dir + "bowls/1200/"
+bowl_dir = img_dir + "bowls/1200/" # this number changes depending on resolution
+jar_dir = img_dir + "jars/1200/" # can be 400, 800, or 1200
+mug_dir = img_dir + "mugs/1200/"
+planter_dir = img_dir + "planters/1200/"
+vase_dir = img_dir + "vases/1200/"
 
-# this contains both file and directory names
-# files have extensions, directories don't
+# bowls
+# contents include both files & directories
 bowl_dir_contents = os.listdir(bowl_dir)
 # filter out the directories, leave the files
 bowl_dir_files = [bowl for bowl in bowl_dir_contents if '.' in bowl]
 
+# jars
+jar_dir_contents = os.listdir(jar_dir)
+jar_dir_files = [jar for jar in jar_dir_contents if '.' in jar]
 
-short_name_contents = [filename.split(".")[0] + "-1200w.png" for filename in bowl_dir_files]
+# mugs
+mug_dir_contents = os.listdir(mug_dir)
+mug_dir_files = [mug for mug in mug_dir_contents if '.' in mug]
 
-for i, filename in enumerate(bowl_dir_files):
-	os.rename(bowl_dir + filename, bowl_dir + short_name_contents[i])
+# planters
+planter_dir_contents = os.listdir(planter_dir)
+planter_dir_files = [planter for planter in planter_dir_contents if '.' in planter]
 
-# eliminating anything with a '.'
-# dir_files = [file for file in dir_contents if "." in file]
+# vases
+vase_dir_contents = os.listdir(vase_dir)
+vase_dir_files = [vase for vase in vase_dir_contents if '.' in vase]
 
-# dir_filenames = [name.split(".")[0] for name in dir_files]
-# dir_new_files = [img_dir + "/" + basename + "-400w.png" for basename in dir_filenames]
+# plug in different details based on what you need:
 
-'''
-StackOverflow answer to this issue:
+short_name_contents = [filename.split(".")[0] + "-1200w.png" for filename in vase_dir_files]
 
-import os
-os.getcwd()
-collection = "C:/darth_vader"
-for i, filename in enumerate(os.listdir(collection)):
-    os.rename("C:/darth_vader/" + filename, "C:/darth_vader/" + str(i) + ".jpg")
-
-'''
-
+for i, filename in enumerate(vase_dir_files):
+	os.rename(vase_dir + filename, vase_dir + short_name_contents[i])
