@@ -1,9 +1,15 @@
 ---
 name: Turquoise berry bowl
-imgs:
-  - turq-berry-bowl-01-01.png
-  - turq-berry-bowl-01-02.png
-  - turq-berry-bowl-01-03.png
+image-set:
+  - small: turq-berry-bowl-01-01-400w.png
+    medium: turq-berry-bowl-01-01-800w.png
+    large: turq-berry-bowl-01-01-1200w.png
+  - small: turq-berry-bowl-01-02-400w.png
+    medium: turq-berry-bowl-01-02-800w.png
+    large: turq-berry-bowl-01-02-1200w.png
+  - small: turq-berry-bowl-01-03-400w.png
+    medium: turq-berry-bowl-01-03-800w.png
+    large: turq-berry-bowl-01-03-1200w.png
 clay: white stoneware
 year: 2024
 ---
