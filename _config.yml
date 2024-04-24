@@ -31,6 +31,13 @@ collections_dir: collections
 #    output: true
 #    permalink: /:collection/:slug/
 
+collections:
+  bowls:
+  jars:
+  mugs:
+  planters:
+  vases:
+
 # 3. assets
 sass:
   sass_dir: "assets/css/_sass"
@@ -47,7 +54,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: no-style-2
+      layout: default
 
 # defaults explained:
 # 1. static images are in assets/img/*
