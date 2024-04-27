@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 /* Portfolio Page Styles: */ 
 
 .portfolio-wrapper {
@@ -7,6 +11,41 @@
 .portfolio__title {
 	border-bottom: 4px solid $dim-gray;
 }
+
+/* NAV */
+
+.portfolio__nav-wrapper {
+	position: relative;
+}
+
+ul.portfolio-nav__link-list {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+li.portfolio-nav__item {
+	padding-right: .5rem;
+}
+
+a.portfolio-nav__link {
+	color: $dim-gray;
+	font-weight: bold;
+	font-size: 1.5rem;
+	border-bottom: 2px solid $dim-gray;
+	transition: color .3s;
+	&:hover, &:focus {
+		color: $african-violet;
+		border-bottom: 2px solid $african-violet;
+	}
+	@media screen and (max-width: 500px) {
+		font-size: 1rem;
+	}
+}
+
+/* CONTENT */
 
 // selector types
 
