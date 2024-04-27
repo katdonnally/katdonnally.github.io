@@ -24,75 +24,139 @@ permalink: /portfolio/
 		</ul>
 	</aside>
 
-	<article class="portfolio__section--bowls">
+	<!-- BOWLS -->
+	<article class="portfolio__section--bowls" id="section--bowls">
 		<h2 class="portfolio-section__title" >Bowls</h2>
 		<div class="portfolio-section__data-wrapper">
 			{% for bowl in bowls %}
-			{% assign image = bowl.imgs.first %}
 			<ul class="portfolio__metadata-wrapper" >
-				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/bowls/' | append: image | relative_url }}" alt="{{ bowl.name }}"></li>
+				<li class="portfolio-metadata__image">
+					{% assign images = bowl.image-set.first %}
+					<img src="{{ 'assets/img/pottery/bowls/1200/' | append: images.large | relative_url}}"
+						 srcset="{{ 'assets/img/pottery/bowls/400/' | append: images.small | relative_url}} 400w,
+						 {{ 'assets/img/pottery/bowls/800/' | append: images.medium | relative_url}} 800w,
+						 {{ 'assets/img/pottery/bowls/1200/' | append: images.large | relative_url}} 1200w"
+						 sizes="(max-width: 400px) 91.7vw,
+						 		(max-width: 600px) 83.3vw,
+						 		(min-width: 768px) 41.7vw,
+						 		(min-width: 1100px) 27.7vw"
+						 alt="{{ bowl.name }}"
+					/> <!-- end image -->
+				</li>
 				<li class="portfolio-metadata__name">{{ bowl.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ bowl.clay | capitalize }}</span>, <span>{{ bowl.year }}</span></li>
 			</ul>
 			{% endfor %}
 		</div>
-	</article>
+	</article> <!-- end bowls -->
 
-	<article class="portfolio__section--jars">
+	<!-- JARS -->
+	<article class="portfolio__section--jars" id="section--jars">
 		<h2 class="portfolio-section__title" >Jars</h2>
 		<div class="portfolio-section__data-wrapper">
 			{% for jar in jars %}
-			{% assign image = jar.imgs.first %}
 			<ul class="portfolio__metadata-wrapper" >
-				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/jars/' | append: image | relative_url }}" alt="{{ jar.name }}"></li>
+				<li class="portfolio-metadata__image">
+					{% assign images = jar.image-set.first %}
+					<img src="{{ 'assets/img/pottery/jars/1200/' | append: images.large | relative_url}}"
+						 srcset="{{ 'assets/img/pottery/jars/400/' | append: images.small | relative_url}} 400w,
+						 {{ 'assets/img/pottery/jars/800/' | append: images.medium | relative_url}} 800w,
+						 {{ 'assets/img/pottery/jars/1200/' | append: images.large | relative_url}} 1200w"
+						 sizes="(max-width: 400px) 91.7vw,
+						 		(max-width: 600px) 83.3vw,
+						 		(min-width: 768px) 41.7vw,
+						 		(min-width: 1100px) 27.7vw"
+						 alt="{{ jar.name }}"
+					/> <!-- end image -->
+				</li>
 				<li class="portfolio-metadata__name">{{ jar.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ jar.clay | capitalize }}</span>, <span>{{ jar.year }}</span></li>
 			</ul>
 			{% endfor %}
 		<div class="portfolio-data-wrapper">
 	</article>
+	<!-- end jars -->
 
-	<article class="portfolio__section--mugs">
+	<!-- MUGS -->
+	<article class="portfolio__section--mugs" id="section--mugs">
 		<h2 class="portfolio-section__title" >Mugs</h2>
 		<div class="portfolio-section__data-wrapper">
 			{% for mug in mugs %}
-			{% assign image = mug.imgs.first %}
 			<ul class="portfolio__metadata-wrapper" >
-				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/mugs/' | append: image | relative_url }}" alt="{{ mug.name }}"></li>
+				<li class="portfolio-metadata__image">
+					{% assign images = mug.image-set.first %}
+					<img src="{{ 'assets/img/pottery/mugs/1200/' | append: images.large | relative_url}}"
+						 srcset="{{ 'assets/img/pottery/mugs/400/' | append: images.small | relative_url}} 400w,
+						 {{ 'assets/img/pottery/mugs/800/' | append: images.medium | relative_url}} 800w,
+						 {{ 'assets/img/pottery/mugs/1200/' | append: images.large | relative_url}} 1200w"
+						 sizes="(max-width: 400px) 91.7vw,
+						 		(max-width: 600px) 83.3vw,
+						 		(min-width: 768px) 41.7vw,
+						 		(min-width: 1100px) 27.7vw"
+						 alt="{{ mug.name }}"
+					/> <!-- end image -->
+				</li>
 				<li class="portfolio-metadata__name">{{ mug.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ mug.clay | capitalize }}</span>, <span>{{ mug.year }}</span></li>
 			</ul>
 			{% endfor %}
 		</div>
 	</article>
+	<!-- end mugs -->
 
-	<article class="portfolio__section--planters">
+	<!-- PLANTERS -->
+	<article class="portfolio__section--planters" id="section--planters">
 		<h2 class="portfolio-section__title" >Planters</h2>
 		<div class="portfolio-section__data-wrapper">
 			{% for planter in planters %}
-			{% assign image = planter.imgs.first %}
 			<ul class="portfolio__metadata-wrapper" >
-				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/planters/' | append: image | relative_url }}" alt="{{ planter.name }}"></li>
+				<li class="portfolio-metadata__image">
+					{% assign images = planter.image-set.first %}
+					<img src="{{ 'assets/img/pottery/planters/1200/' | append: images.large | relative_url}}"
+						 srcset="{{ 'assets/img/pottery/planters/400/' | append: images.small | relative_url}} 400w,
+						 {{ 'assets/img/pottery/planters/800/' | append: images.medium | relative_url}} 800w,
+						 {{ 'assets/img/pottery/planters/1200/' | append: images.large | relative_url}} 1200w"
+						 sizes="(max-width: 400px) 91.7vw,
+						 		(max-width: 600px) 83.3vw,
+						 		(min-width: 768px) 41.7vw,
+						 		(min-width: 1100px) 27.7vw"
+						 alt="{{ planter.name }}"
+					/> <!-- end image -->
+				</li>
 				<li class="portfolio-metadata__name">{{ planter.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ planter.clay | capitalize }}</span>, <span>{{ planter.year }}</span></li>
 			</ul>
 			{% endfor %}
 		</div>
 	</article>
+	<!-- end planters -->
 
-	<article class="portfolio__section--vases">
+	<!-- VASES -->
+	<article class="portfolio__section--vases" id="section--vases">
 		<h2 class="portfolio-section__title" >Vases</h2>
 		<div class="portfolio-section__data-wrapper">
 			{% for vase in vases %}
-			{% assign image = vase.imgs.first %}
 			<ul class="portfolio__metadata-wrapper" >
-				<li class="portfolio-metadata__image"><img src="{{ 'assets/img/pottery/vases/' | append: image | relative_url }}" alt="{{ vase.name }}"></li>
+				<li class="portfolio-metadata__image">
+					{% assign images = vase.image-set.first %}
+					<img src="{{ 'assets/img/pottery/vases/1200/' | append: images.large | relative_url}}"
+						 srcset="{{ 'assets/img/pottery/vases/400/' | append: images.small | relative_url}} 400w,
+						 {{ 'assets/img/pottery/vases/800/' | append: images.medium | relative_url}} 800w,
+						 {{ 'assets/img/pottery/vases/1200/' | append: images.large | relative_url}} 1200w"
+						 sizes="(max-width: 400px) 91.7vw,
+						 		(max-width: 600px) 83.3vw,
+						 		(min-width: 768px) 41.7vw,
+						 		(min-width: 1100px) 27.7vw"
+						 alt="{{ vase.name }}"
+					/> <!-- end image -->
+				</li>
 				<li class="portfolio-metadata__name">{{ vase.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ vase.clay | capitalize }}</span>, <span>{{ vase.year }}</span></li>
 			</ul>
 			{% endfor %}
 		</div>
 	</article>
+	<!-- end vases -->
 
 </main>
 
