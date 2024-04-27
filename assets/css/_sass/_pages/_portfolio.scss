@@ -2,6 +2,12 @@ html {
 	scroll-behavior: smooth;
 }
 
+* {
+	box-sizing: border-box;
+	scrollbar-color: transparent transparent; /* thumb & track color */
+	scrollbar-width: 0;	
+}
+
 /* Portfolio Page Styles: */ 
 
 .portfolio-wrapper {
@@ -109,9 +115,15 @@ ul.portfolio__metadata-wrapper {
 }
 
 li.portfolio-metadata__image {
+	position: relative;
+	display: flex;
 	width: 100%;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-snap-align: center;
 	img {
 		width: 100%;
+		scroll-snap-align: center;
 	}
 }
 
