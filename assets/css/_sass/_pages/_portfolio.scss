@@ -2,10 +2,16 @@ html {
 	scroll-behavior: smooth;
 }
 
+* {
+	box-sizing: border-box;
+	scrollbar-color: transparent transparent; /* thumb & track color */
+	scrollbar-width: 0;	
+}
+
 /* Portfolio Page Styles: */ 
 
 .portfolio-wrapper {
-
+	scroll-snap-type: y mandatory;
 }
 
 .portfolio__title {
@@ -109,8 +115,29 @@ ul.portfolio__metadata-wrapper {
 }
 
 li.portfolio-metadata__image {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
 	width: 100%;
 	img {
+		width: 100%;
+		scroll-snap-align: center;
+	}
+}
+
+.portfolio-metadata__img-links {
+	display: flex;
+}
+
+.portfolio-img-link__wrapper {
+	position: relative;
+	height: 1.25rem;
+	width: 1.25rem;
+	margin-right: .25rem;
+	background-color: $dim-gray;
+	a {
+		display: block;
+		height: 100%;
 		width: 100%;
 	}
 }

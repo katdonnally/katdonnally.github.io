@@ -17,7 +17,7 @@ permalink: /portfolio/
 	<aside class="portfolio__nav-wrapper">
 		<ul class="portfolio-nav__link-list">
 			<li class="portfolio-nav__item"><a href="#section--bowls" class="portfolio-nav__link">Bowls</a></li>
-			<li class="portfolio-nav__item"><a href="#section--jarss" class="portfolio-nav__link">Jars</a></li>
+			<li class="portfolio-nav__item"><a href="#section--jars" class="portfolio-nav__link">Jars</a></li>
 			<li class="portfolio-nav__item"><a href="#section--mugs" class="portfolio-nav__link">Mugs</a></li>
 			<li class="portfolio-nav__item"><a href="#section--planters" class="portfolio-nav__link">Planters</a></li>
 			<li class="portfolio-nav__item"><a href="#section--vases" class="portfolio-nav__link">Vases</a></li>
@@ -29,9 +29,11 @@ permalink: /portfolio/
 		<h2 class="portfolio-section__title" >Bowls</h2>
 		<div class="portfolio-section__data-wrapper">
 			{% for bowl in bowls %}
+			{% assign basename = bowl.name | slugify %}
 			<ul class="portfolio__metadata-wrapper" >
-				<li class="portfolio-metadata__image">
-					{% assign images = bowl.image-set.first %}
+				<li class="portfolio-metadata__image" tabindex="0">
+					{% for images in bowl.image-set %}
+					{% assign idname = basename | append: '-' | append: forloop.index %}
 					<img src="{{ 'assets/img/pottery/bowls/1200/' | append: images.large | relative_url}}"
 						 srcset="{{ 'assets/img/pottery/bowls/400/' | append: images.small | relative_url}} 400w,
 						 {{ 'assets/img/pottery/bowls/800/' | append: images.medium | relative_url}} 800w,
@@ -41,8 +43,15 @@ permalink: /portfolio/
 						 		(min-width: 768px) 41.7vw,
 						 		(min-width: 1100px) 27.7vw"
 						 alt="{{ bowl.name }}"
+						 id="{{ idname }}"
 					/> <!-- end image -->
+					{% endfor %} <!-- end images in bowl.image-set -->
 				</li>
+				<!--li class="portfolio-metadata__img-links">
+					<div class="portfolio-img-link__wrapper"><a href=""></a></div>
+					<div class="portfolio-img-link__wrapper"><a href=""></a></div>
+					<div class="portfolio-img-link__wrapper"><a href=""></a></div>
+				</li-->
 				<li class="portfolio-metadata__name">{{ bowl.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ bowl.clay | capitalize }}</span>, <span>{{ bowl.year }}</span></li>
 			</ul>
@@ -57,7 +66,7 @@ permalink: /portfolio/
 			{% for jar in jars %}
 			<ul class="portfolio__metadata-wrapper" >
 				<li class="portfolio-metadata__image">
-					{% assign images = jar.image-set.first %}
+					{% for images in jar.image-set %}
 					<img src="{{ 'assets/img/pottery/jars/1200/' | append: images.large | relative_url}}"
 						 srcset="{{ 'assets/img/pottery/jars/400/' | append: images.small | relative_url}} 400w,
 						 {{ 'assets/img/pottery/jars/800/' | append: images.medium | relative_url}} 800w,
@@ -68,6 +77,7 @@ permalink: /portfolio/
 						 		(min-width: 1100px) 27.7vw"
 						 alt="{{ jar.name }}"
 					/> <!-- end image -->
+					{% endfor %}
 				</li>
 				<li class="portfolio-metadata__name">{{ jar.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ jar.clay | capitalize }}</span>, <span>{{ jar.year }}</span></li>
@@ -84,7 +94,7 @@ permalink: /portfolio/
 			{% for mug in mugs %}
 			<ul class="portfolio__metadata-wrapper" >
 				<li class="portfolio-metadata__image">
-					{% assign images = mug.image-set.first %}
+					{% for images in mug.image-set %}
 					<img src="{{ 'assets/img/pottery/mugs/1200/' | append: images.large | relative_url}}"
 						 srcset="{{ 'assets/img/pottery/mugs/400/' | append: images.small | relative_url}} 400w,
 						 {{ 'assets/img/pottery/mugs/800/' | append: images.medium | relative_url}} 800w,
@@ -95,6 +105,7 @@ permalink: /portfolio/
 						 		(min-width: 1100px) 27.7vw"
 						 alt="{{ mug.name }}"
 					/> <!-- end image -->
+					{% endfor %}
 				</li>
 				<li class="portfolio-metadata__name">{{ mug.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ mug.clay | capitalize }}</span>, <span>{{ mug.year }}</span></li>
@@ -111,7 +122,7 @@ permalink: /portfolio/
 			{% for planter in planters %}
 			<ul class="portfolio__metadata-wrapper" >
 				<li class="portfolio-metadata__image">
-					{% assign images = planter.image-set.first %}
+					{% for images in planter.image-set %}
 					<img src="{{ 'assets/img/pottery/planters/1200/' | append: images.large | relative_url}}"
 						 srcset="{{ 'assets/img/pottery/planters/400/' | append: images.small | relative_url}} 400w,
 						 {{ 'assets/img/pottery/planters/800/' | append: images.medium | relative_url}} 800w,
@@ -122,6 +133,7 @@ permalink: /portfolio/
 						 		(min-width: 1100px) 27.7vw"
 						 alt="{{ planter.name }}"
 					/> <!-- end image -->
+					{% endfor %}
 				</li>
 				<li class="portfolio-metadata__name">{{ planter.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ planter.clay | capitalize }}</span>, <span>{{ planter.year }}</span></li>
@@ -138,7 +150,7 @@ permalink: /portfolio/
 			{% for vase in vases %}
 			<ul class="portfolio__metadata-wrapper" >
 				<li class="portfolio-metadata__image">
-					{% assign images = vase.image-set.first %}
+					{% for images in vase.image-set %}
 					<img src="{{ 'assets/img/pottery/vases/1200/' | append: images.large | relative_url}}"
 						 srcset="{{ 'assets/img/pottery/vases/400/' | append: images.small | relative_url}} 400w,
 						 {{ 'assets/img/pottery/vases/800/' | append: images.medium | relative_url}} 800w,
@@ -149,6 +161,7 @@ permalink: /portfolio/
 						 		(min-width: 1100px) 27.7vw"
 						 alt="{{ vase.name }}"
 					/> <!-- end image -->
+					{% endfor %}
 				</li>
 				<li class="portfolio-metadata__name">{{ vase.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ vase.clay | capitalize }}</span>, <span>{{ vase.year }}</span></li>
