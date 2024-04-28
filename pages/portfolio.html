@@ -17,7 +17,7 @@ permalink: /portfolio/
 	<aside class="portfolio__nav-wrapper">
 		<ul class="portfolio-nav__link-list">
 			<li class="portfolio-nav__item"><a href="#section--bowls" class="portfolio-nav__link">Bowls</a></li>
-			<li class="portfolio-nav__item"><a href="#section--jarss" class="portfolio-nav__link">Jars</a></li>
+			<li class="portfolio-nav__item"><a href="#section--jars" class="portfolio-nav__link">Jars</a></li>
 			<li class="portfolio-nav__item"><a href="#section--mugs" class="portfolio-nav__link">Mugs</a></li>
 			<li class="portfolio-nav__item"><a href="#section--planters" class="portfolio-nav__link">Planters</a></li>
 			<li class="portfolio-nav__item"><a href="#section--vases" class="portfolio-nav__link">Vases</a></li>
@@ -29,9 +29,11 @@ permalink: /portfolio/
 		<h2 class="portfolio-section__title" >Bowls</h2>
 		<div class="portfolio-section__data-wrapper">
 			{% for bowl in bowls %}
+			{% assign basename = bowl.name | slugify %}
 			<ul class="portfolio__metadata-wrapper" >
-				<li class="portfolio-metadata__image">
+				<li class="portfolio-metadata__image" tabindex="0">
 					{% for images in bowl.image-set %}
+					{% assign idname = basename | append: '-' | append: forloop.index %}
 					<img src="{{ 'assets/img/pottery/bowls/1200/' | append: images.large | relative_url}}"
 						 srcset="{{ 'assets/img/pottery/bowls/400/' | append: images.small | relative_url}} 400w,
 						 {{ 'assets/img/pottery/bowls/800/' | append: images.medium | relative_url}} 800w,
@@ -41,9 +43,15 @@ permalink: /portfolio/
 						 		(min-width: 768px) 41.7vw,
 						 		(min-width: 1100px) 27.7vw"
 						 alt="{{ bowl.name }}"
+						 id="{{ idname }}"
 					/> <!-- end image -->
-					{% endfor %}
+					{% endfor %} <!-- end images in bowl.image-set -->
 				</li>
+				<!--li class="portfolio-metadata__img-links">
+					<div class="portfolio-img-link__wrapper"><a href=""></a></div>
+					<div class="portfolio-img-link__wrapper"><a href=""></a></div>
+					<div class="portfolio-img-link__wrapper"><a href=""></a></div>
+				</li-->
 				<li class="portfolio-metadata__name">{{ bowl.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ bowl.clay | capitalize }}</span>, <span>{{ bowl.year }}</span></li>
 			</ul>
