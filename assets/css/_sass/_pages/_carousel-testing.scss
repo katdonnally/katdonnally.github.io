@@ -1,5 +1,10 @@
 /* Carousel Testing: */
 
+html {
+	scroll-margin-top: 2rem;
+	scroll-padding-top: 2rem;
+}
+
 .carousel-wrapper {
 	position: relative;
 	max-width: 300px;
@@ -12,7 +17,7 @@
 	img {
 		max-width: 300px;
 	}
-	ol, ul, li {
+	ol, ul, {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -26,10 +31,13 @@
 	overflow-x: scroll;
 	scroll-behavior: smooth;
 	scroll-snap-type: x mandatory;
+	
 }
 
 .carousel-item {
 	scroll-snap-align: center;
+//	padding-top: 1.5rem;
+	
 }
 
 #item__1 {
