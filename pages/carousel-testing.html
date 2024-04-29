@@ -4,3 +4,36 @@ title: Carousel Testing
 permalink: /carousel-testing/
 menu: 0
 ---
+
+<h1>Carousel Testing</h1>
+
+{% assign jars = site.jars %}
+<section class="carousel-wrapper">
+
+	{% for jar in jars %}
+	<ul class="carousel-viewport">
+		
+		{% for images in jar.image-set %}
+		{% assign basename = jar.name | slugify %}
+		{% assign id = basename | append: '-' | append: forloop.index %}
+		<li class="carousel-item" id="{{ id }}">
+			<img class="carousel-item__img" src="{{ 'assets/img/pottery/jars/800/' | append: images.medium | relative_url}}">
+		</li>
+		{% endfor %}
+		
+	</ul> <!-- end viewport content -->
+	
+	<aside class="carousel-nav">
+
+		<ul class="carousel-nav-list">
+			{% for images in jar.image-set %}
+			{% assign basename = jar.name | slugify %}
+			{% assign id = basename | append: '-' | append: forloop.index %}
+			<li class="carousel-nav__item">
+				<a href="{{ '#' | append: id }} "></a>
+			</li>
+			{% endfor %}
+		</ul> <!-- end nav list -->
+	</aside> <!-- end nav wrapper -->
+	{% endfor %} <!-- end 'for jar in jars' -->
+</section> <!-- end carousel wrapper -->
