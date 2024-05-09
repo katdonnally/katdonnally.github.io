@@ -47,12 +47,6 @@ menu: 1
 						{% endfor %} <!-- end images in bowl.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
-				<li class="portfolio-metadata__img-links">
-					{% for images in bowl.image-set %}
-					{% assign idname = basename | append: '-' | append: forloop.index %}
-					<div class="portfolio-img-link__wrapper"><a href="{{ idname | prepend: '#'}}">{{ forloop.index }}</a></div>
-					{% endfor %}
-				</li>
 				<li class="portfolio-metadata__name">{{ bowl.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ bowl.clay | capitalize }}</span>, <span>{{ bowl.year }}</span></li>
 			</ul>
