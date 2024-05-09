@@ -153,6 +153,10 @@ li.portfolio-metadata__image {
 	color: hsla(0, 0%, 100%, .7);
 	transform: translate(0, -50%);
 	cursor: pointer;
+	transition: color .3s;
+	&:hover, &:focus {
+		color: white;
+	}
 }
 
 .js-nav-left {
