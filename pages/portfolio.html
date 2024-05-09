@@ -38,7 +38,7 @@ menu: 1
 						{% for images in bowl.image-set %}
 						{% assign idname = basename | append: '-' | append: forloop.index %}
 						<li class="portfolio-metadata__images" tabindex="0" id="{{ idname }}">
-							<img src="{{ 'assets/img/pottery/bowls/1200/' | append: images.large | relative_url}}"
+							<img src="{{ 'assets/img/pottery/bowls/400/' | append: images.small | relative_url}}"
 								 srcset="{{ 'assets/img/pottery/bowls/400/' | append: images.small | relative_url}} 400w,
 								 {{ 'assets/img/pottery/bowls/800/' | append: images.medium | relative_url}} 800w,
 								 {{ 'assets/img/pottery/bowls/1200/' | append: images.large | relative_url}} 1200w"
