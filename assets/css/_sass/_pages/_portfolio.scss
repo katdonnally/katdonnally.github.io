@@ -125,6 +125,51 @@ li.portfolio-metadata__image {
 	}
 }
 
+/***************** CAROUSEL TESTING: ******************/
+
+// li
+.portfolio-metadata__carousel-wrapper {
+	position: relative;
+	min-width: 250px;
+	min-height: 0;
+	padding-left: 0;
+	margin-top: 0;
+	list-style-type: none;
+	@media screen and (min-width: 600px) and (max-width: 767px) {
+		max-width: 300px;
+	}
+}
+
+// ul
+.portfolio-metadata__carousel-viewport {
+	position: relative;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	width: 100%;
+}
+
+// li
+.portfolio-metadata__images {
+	position: relative;
+	width: 100%;
+	scroll-snap-align: center;
+	flex-shrink: 0;
+	img {
+		width: 100%;
+		scroll-snap-align: center;
+		overflow-x: scroll;
+	}
+}
+
+.portfolio-section__data-wrapper ul,
+.portfolio-section__data-wrapper li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
 .portfolio-metadata__img-links {
 	display: flex;
 }
@@ -134,13 +179,16 @@ li.portfolio-metadata__image {
 	height: 1.25rem;
 	width: 1.25rem;
 	margin-right: .25rem;
-	background-color: $dim-gray;
+	background-color: lightgray;
+	border-radius: 50%;
 	a {
 		display: block;
 		height: 100%;
 		width: 100%;
 	}
 }
+
+/***************** END CAROUSEL TESTING ***************/
 
 .portfolio-metadata__name {
 	font-weight: bold;
@@ -151,7 +199,6 @@ li.portfolio-metadata__image {
 
 .portfolio-metadata__details {
 	font-family: $inconsolata;
-
 	span {
 		color: $dim-gray;
 		&:first-of-type {
@@ -162,3 +209,4 @@ li.portfolio-metadata__image {
 		}
 	}
 }
+
