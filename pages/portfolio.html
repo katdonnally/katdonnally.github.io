@@ -34,6 +34,8 @@ menu: 1
 			<ul class="portfolio__metadata-wrapper" >
 				<!-- images -->
 				<li class="portfolio-metadata__carousel-wrapper">
+					<div class="js-nav-left">&lsaquo;</div>
+					<div class="js-nav-right">&rsaquo;</div>
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in bowl.image-set %}
 						{% assign idname = basename | append: '-' | append: forloop.index %}
