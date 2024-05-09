@@ -143,6 +143,29 @@ li.portfolio-metadata__image {
 	}
 }
 
+// JS NAV //
+
+[class*="js-nav"] {
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	font-size: 4rem;
+	color: hsla(0, 0%, 100%, .7);
+	transform: translate(0, -50%);
+	cursor: pointer;
+}
+
+.js-nav-left {
+	left: 0;
+}
+
+.js-nav-right {
+	right: 0;
+}
+
+// END JS NAV
+
+
 // ul
 .portfolio-metadata__carousel-viewport {
 	position: relative;
