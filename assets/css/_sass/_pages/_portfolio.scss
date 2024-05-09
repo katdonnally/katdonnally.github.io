@@ -143,6 +143,33 @@ li.portfolio-metadata__image {
 	}
 }
 
+// JS NAV //
+
+[class*="js-nav"] {
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	font-size: 4rem;
+	color: hsla(0, 0%, 100%, .7);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	transition: color .3s;
+	&:hover, &:focus {
+		color: white;
+	}
+}
+
+.js-nav-left {
+	left: 0;
+}
+
+.js-nav-right {
+	right: 0;
+}
+
+// END JS NAV
+
+
 // ul
 .portfolio-metadata__carousel-viewport {
 	position: relative;
@@ -171,29 +198,6 @@ li.portfolio-metadata__image {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-}
-
-.portfolio-metadata__img-links {
-	display: flex;
-}
-
-.portfolio-img-link__wrapper {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 1.25rem;
-	width: 1.25rem;
-	margin-right: .25rem;
-	background-color: lightgray;
-	border-radius: 50%;
-	transition: background-color .3s;
-	&:hover, &:focus {
-		background-color: $dim-gray;
-	}
-	a {
-		color: black;
-	}
 }
 
 /***************** END CAROUSEL TESTING ***************/
