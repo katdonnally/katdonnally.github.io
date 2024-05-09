@@ -110,7 +110,7 @@ ul.portfolio__metadata-wrapper {
 	position: relative;
 	min-width: 250px;
 	padding-left: 0;
-	margin-top: 0;
+	padding-top: 1.25rem !important;
 	list-style-type: none;
 	@media screen and (min-width: 600px) and (max-width: 767px) {
 		max-width: 300px;
@@ -207,6 +207,7 @@ li.portfolio-metadata__image {
 
 .portfolio-metadata__details {
 	font-family: $inconsolata;
+	line-height: 1;
 	span {
 		color: $dim-gray;
 		&:first-of-type {
