@@ -4,14 +4,17 @@ html {
 
 * {
 	box-sizing: border-box;
-	scrollbar-color: transparent transparent; /* thumb & track color */
-	scrollbar-width: 0;	
 }
 
 /* Portfolio Page Styles: */ 
 
 .portfolio-wrapper {
 	scroll-snap-type: y mandatory;
+	* {
+		scrollbar-color: transparent transparent; /* thumb & track color */
+		scrollbar-width: 0;
+	}
+
 }
 
 .portfolio__title {
