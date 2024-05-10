@@ -13,6 +13,7 @@ if (document.querySelector('.portfolio-wrapper')) {
 		let translateNum = viewportContentsWidth / num;
 
 		function toTheEnd() {
+			alert(`Activated: ${event.type}`);
 			if (viewport.scrollLeft <= viewportContentsWidth) {
 				viewport.scrollLeft += translateNum;
 			}
@@ -25,7 +26,7 @@ if (document.querySelector('.portfolio-wrapper')) {
 		}
 
 		function testing() {
-			alert(`Yes, this is with touch: ${event.type}`);
+			// alert(`Yes, this is with touch: ${event.type}`);
 		}
 
 		rightArrows[i].addEventListener('click', toTheEnd);
