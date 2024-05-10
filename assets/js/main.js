@@ -36,5 +36,6 @@ if (document.querySelector('.portfolio-wrapper')) {
 		leftArrows[i].addEventListener('touchstart', toTheStart);
 
 		rightArrows[i].addEventListener('touchstart', testing);
+		rightArrows[i].addEventListener('click', testing);
 	}
 }
