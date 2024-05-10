@@ -25,7 +25,7 @@ if (document.querySelector('.portfolio-wrapper')) {
 		}
 
 		function testing(event) {
-			alert("Yes, this is with touch: " . event.type);
+			alert("Yes, this is with touch");
 		}
 
 		rightArrows[i].addEventListener('click', toTheEnd);
