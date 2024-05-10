@@ -26,5 +26,8 @@ if (document.querySelector('.portfolio-wrapper')) {
 
 		rightArrows[i].addEventListener('click', toTheEnd);
 		leftArrows[i].addEventListener('click', toTheStart);
+		// mobile
+		rightArrows[i].addEventListener('touchstart', toTheEnd);
+		leftArrows[i].addEventListener('touchstart', toTheStart);
 	}
 }
