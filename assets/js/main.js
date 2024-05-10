@@ -13,7 +13,7 @@ if (document.querySelector('.portfolio-wrapper')) {
 		let translateNum = viewportContentsWidth / num;
 
 		function toTheEnd() {
-			alert(`Viewport contents width: ${viewportContentsWidth}`);
+			//alert(`Viewport contents width: ${viewportContentsWidth}`);
 			if (viewport.scrollLeft <= viewportContentsWidth) {
 				viewport.scrollLeft += translateNum;
 			}
@@ -25,10 +25,16 @@ if (document.querySelector('.portfolio-wrapper')) {
 			}
 		}
 
+		function testing() {
+			alert(`Viewport contents width: ${viewportContentsWidth}`);
+		}
+
 		rightArrows[i].addEventListener('click', toTheEnd);
 		leftArrows[i].addEventListener('click', toTheStart);
 		// mobile
 		rightArrows[i].addEventListener('touchstart', toTheEnd);
 		leftArrows[i].addEventListener('touchstart', toTheStart);
+
+		rightArrows[i].addEventListener('touchstart', testing);
 	}
 }
