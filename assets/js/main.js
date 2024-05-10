@@ -12,7 +12,8 @@ if (document.querySelector('.portfolio-wrapper')) {
 		let viewportContentsWidth = viewport.scrollWidth;
 		let translateNum = viewportContentsWidth / num;
 
-		function toTheEnd() {
+		function toTheEnd(event) {
+			alert(event.type);
 			if (viewport.scrollLeft <= viewportContentsWidth) {
 				viewport.scrollLeft += translateNum;
 			}
