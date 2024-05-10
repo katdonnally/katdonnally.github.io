@@ -13,7 +13,7 @@ if (document.querySelector('.portfolio-wrapper')) {
 		let translateNum = viewportContentsWidth / num;
 
 		function toTheEnd(event) {
-			alert('success!' event.type);
+			alert(`type: ${event.pointerType}`);
 			if (viewport.scrollLeft <= viewportContentsWidth) {
 				viewport.scrollLeft += translateNum;
 			}
