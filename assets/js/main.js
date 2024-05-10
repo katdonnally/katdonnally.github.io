@@ -24,7 +24,7 @@ if (document.querySelector('.portfolio-wrapper')) {
 			}
 		}
 
-		function testing(event) {
+		function testing() {
 			alert("Yes, this is with touch");
 		}
 
