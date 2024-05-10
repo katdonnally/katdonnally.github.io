@@ -12,8 +12,7 @@ if (document.querySelector('.portfolio-wrapper')) {
 		let viewportContentsWidth = viewport.scrollWidth;
 		let translateNum = viewportContentsWidth / num;
 
-		function toTheEnd(event) {
-			alert(`type: ${event}`);
+		function toTheEnd() {
 			if (viewport.scrollLeft <= viewportContentsWidth) {
 				viewport.scrollLeft += translateNum;
 			}
@@ -25,10 +24,16 @@ if (document.querySelector('.portfolio-wrapper')) {
 			}
 		}
 
+		function testing() {
+			alert("Yes, this is with touch");
+		}
+
 		rightArrows[i].addEventListener('click', toTheEnd);
 		leftArrows[i].addEventListener('click', toTheStart);
 		// mobile
 		rightArrows[i].addEventListener('touchstart', toTheEnd);
 		leftArrows[i].addEventListener('touchstart', toTheStart);
+
+		rightArrows[i].addEventListener('touchstart', testing);
 	}
 }
