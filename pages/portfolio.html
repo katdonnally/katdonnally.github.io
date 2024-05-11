@@ -38,9 +38,8 @@ menu: 1
 					<div class="js-nav-right">&rsaquo;</div>
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in bowl.image-set %}
-						{% assign idname = basename | append: '-' | append: forloop.index %}
-						<li class="portfolio-metadata__images" tabindex="0" id="{{ idname }}">
-							<img src="{{ 'assets/img/pottery/bowls/400/' | append: images.small | relative_url}}"
+						<li class="portfolio-metadata__images" tabindex="0">
+							<img src="{{ 'assets/img/pottery/bowls/600/' | append: images.medium | relative_url}}"
 								 alt="{{ bowl.name }}"
 							/> 
 						</li> <!-- end image -->
@@ -66,13 +65,12 @@ menu: 1
 					<div class="js-nav-right">&rsaquo;</div>
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in jar.image-set %}
-						{% assign idname = basename | append: '-' | append: forloop.index %}
-						<li class="portfolio-metadata__images" tabindex="0" id="{{ idname }}">
-							<img src="{{ 'assets/img/pottery/jars/400/' | append: images.small | relative_url}}"
+						<li class="portfolio-metadata__images" tabindex="0">
+							<img src="{{ 'assets/img/pottery/jars/600/' | append: images.medium | relative_url}}"
 								 alt="{{ jar.name }}"
 							/> 
 						</li> <!-- end image -->
-						{% endfor %} <!-- end images in bowl.image-set -->
+						{% endfor %} <!-- end images in jar.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ jar.name }}</li>
@@ -95,13 +93,12 @@ menu: 1
 					<div class="js-nav-right">&rsaquo;</div>
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in mug.image-set %}
-						{% assign idname = basename | append: '-' | append: forloop.index %}
-						<li class="portfolio-metadata__images" tabindex="0" id="{{ idname }}">
-							<img src="{{ 'assets/img/pottery/mugs/400/' | append: images.small | relative_url}}"
+						<li class="portfolio-metadata__images" tabindex="0">
+							<img src="{{ 'assets/img/pottery/mugs/600/' | append: images.medium | relative_url}}"
 								 alt="{{ mugs.name }}"
 							/> 
 						</li> <!-- end image -->
-						{% endfor %} <!-- end images in bowl.image-set -->
+						{% endfor %} <!-- end images in mug.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ mug.name }}</li>
@@ -124,13 +121,12 @@ menu: 1
 					<div class="js-nav-right">&rsaquo;</div>
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in planter.image-set %}
-						{% assign idname = basename | append: '-' | append: forloop.index %}
-						<li class="portfolio-metadata__images" tabindex="0" id="{{ idname }}">
-							<img src="{{ 'assets/img/pottery/planters/400/' | append: images.small | relative_url}}"
+						<li class="portfolio-metadata__images" tabindex="0">
+							<img src="{{ 'assets/img/pottery/planters/600/' | append: images.medium | relative_url}}"
 								 alt="{{ planter.name }}"
 							/> 
 						</li> <!-- end image -->
-						{% endfor %} <!-- end images in bowl.image-set -->
+						{% endfor %} <!-- end images in planter.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ planter.name }}</li>
@@ -153,13 +149,12 @@ menu: 1
 					<div class="js-nav-right">&rsaquo;</div>
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in vase.image-set %}
-						{% assign idname = basename | append: '-' | append: forloop.index %}
-						<li class="portfolio-metadata__images" tabindex="0" id="{{ idname }}">
-							<img src="{{ 'assets/img/pottery/vases/400/' | append: images.small | relative_url}}"
+						<li class="portfolio-metadata__images" tabindex="0">
+							<img src="{{ 'assets/img/pottery/vases/600/' | append: images.medium | relative_url}}"
 								 alt="{{ vase.name }}"
 							/> 
 						</li> <!-- end image -->
-						{% endfor %} <!-- end images in bowl.image-set -->
+						{% endfor %} <!-- end images in vase.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ vase.name }}</li>
