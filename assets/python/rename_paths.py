@@ -35,7 +35,7 @@ vase_dir_files = [vase for vase in vase_dir_contents if '.' in vase]
 
 # plug in different details based on what you need:
 
-short_name_contents = [filename.split(".")[0] + "-600w.png" for filename in vase_dir_files]
+short_name_contents = [filename.split(".")[0] + "-600w.png" for filename in mug_dir_files]
 
-for i, filename in enumerate(vase_dir_files):
-	os.rename(vase_dir + filename, vase_dir + short_name_contents[i])
+for i, filename in enumerate(mug_dir_files):
+	os.rename(mug_dir + filename, mug_dir + short_name_contents[i])
