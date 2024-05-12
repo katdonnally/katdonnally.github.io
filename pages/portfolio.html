@@ -39,7 +39,8 @@ menu: 1
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in bowl.image-set %}
 						<li class="portfolio-metadata__images" tabindex="0">
-							<img src="{{ 'assets/img/pottery/bowls/600/' | append: images.medium | relative_url}}"
+							<img loading="lazy"
+								 src="{{ 'assets/img/pottery/bowls/600/' | append: images.medium | relative_url}}"
 								 alt="{{ bowl.name }}"
 							/> 
 						</li> <!-- end image -->
@@ -66,7 +67,8 @@ menu: 1
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in jar.image-set %}
 						<li class="portfolio-metadata__images" tabindex="0">
-							<img src="{{ 'assets/img/pottery/jars/600/' | append: images.medium | relative_url}}"
+							<img loading="lazy"
+								 src="{{ 'assets/img/pottery/jars/600/' | append: images.medium | relative_url}}"
 								 alt="{{ jar.name }}"
 							/> 
 						</li> <!-- end image -->
@@ -94,7 +96,8 @@ menu: 1
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in mug.image-set %}
 						<li class="portfolio-metadata__images" tabindex="0">
-							<img src="{{ 'assets/img/pottery/mugs/600/' | append: images.medium | relative_url}}"
+							<img loading="lazy"
+								 src="{{ 'assets/img/pottery/mugs/600/' | append: images.medium | relative_url}}"
 								 alt="{{ mugs.name }}"
 							/> 
 						</li> <!-- end image -->
@@ -122,7 +125,8 @@ menu: 1
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in planter.image-set %}
 						<li class="portfolio-metadata__images" tabindex="0">
-							<img src="{{ 'assets/img/pottery/planters/600/' | append: images.medium | relative_url}}"
+							<img loading="lazy"
+								 src="{{ 'assets/img/pottery/planters/600/' | append: images.medium | relative_url}}"
 								 alt="{{ planter.name }}"
 							/> 
 						</li> <!-- end image -->
@@ -150,7 +154,8 @@ menu: 1
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in vase.image-set %}
 						<li class="portfolio-metadata__images" tabindex="0">
-							<img src="{{ 'assets/img/pottery/vases/600/' | append: images.medium | relative_url}}"
+							<img loading="lazy"
+								 src="{{ 'assets/img/pottery/vases/600/' | append: images.medium | relative_url}}"
 								 alt="{{ vase.name }}"
 							/> 
 						</li> <!-- end image -->
