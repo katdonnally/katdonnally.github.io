@@ -39,7 +39,7 @@ menu: 1
 					<ul class="portfolio-metadata__carousel-viewport">
 						{% for images in bowl.image-set %}
 						<li class="portfolio-metadata__images" tabindex="0">
-							<img loading="lazy"
+							<img loading="eager"
 								 src="{{ 'assets/img/pottery/bowls/600/' | append: images.medium | relative_url}}"
 								 alt="{{ bowl.name }}"
 							/> 
