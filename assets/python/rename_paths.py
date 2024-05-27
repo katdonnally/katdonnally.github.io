@@ -5,11 +5,11 @@ import os
 
 img_dir = "C:/Users/Katherine/OneDrive/Clay/katdonnally.github.io/assets/img/pottery/"
 
-bowl_dir = img_dir + "bowls/600/" # this number changes depending on resolution
-jar_dir = img_dir + "jars/600/" # can be 400, 600, 800, or 1200
-mug_dir = img_dir + "mugs/600/"
-planter_dir = img_dir + "planters/600/"
-vase_dir = img_dir + "vases/600/"
+bowl_dir = img_dir + "bowls/1200/" # this number changes depending on resolution
+jar_dir = img_dir + "jars/1200/" # can be 400, 600, 800, or 1200
+mug_dir = img_dir + "mugs/1200/"
+planter_dir = img_dir + "planters/1200/"
+vase_dir = img_dir + "vases/1200/"
 
 # bowls
 # contents include both files & directories
@@ -35,7 +35,7 @@ vase_dir_files = [vase for vase in vase_dir_contents if '.' in vase]
 
 # plug in different details based on what you need:
 
-short_name_contents = [filename.split(".")[0] + "-600w.png" for filename in mug_dir_files]
+short_name_contents = [filename.split(".")[0] + "-1200w.jpg" for filename in vase_dir_files]
 
-for i, filename in enumerate(mug_dir_files):
-	os.rename(mug_dir + filename, mug_dir + short_name_contents[i])
+for i, filename in enumerate(vase_dir_files):
+	os.rename(vase_dir + filename, vase_dir + short_name_contents[i])
