@@ -1,15 +1,15 @@
 ---
 name: Black geometric bowl
 image-set:
-  - small: black-geometric-bowl-01-01-400w.png
-    medium: black-geometric-bowl-01-01-600w.png
-    large: black-geometric-bowl-01-01-1200w.png
-  - small: black-geometric-bowl-01-02-400w.png
-    medium: black-geometric-bowl-01-02-600w.png
-    large: black-geometric-bowl-01-02-1200w.png
-  - small: black-geometric-bowl-01-03-400w.png
-    medium: black-geometric-bowl-01-03-600w.png
-    large: black-geometric-bowl-01-03-1200w.png
+  - small: black-geometric-bowl-01-01-400w.jpg
+    medium: black-geometric-bowl-01-01-600w.jpg
+    large: black-geometric-bowl-01-01-1200w.jpg
+  - small: black-geometric-bowl-01-02-400w.jpg
+    medium: black-geometric-bowl-01-02-600w.jpg
+    large: black-geometric-bowl-01-02-1200w.jpg
+  - small: black-geometric-bowl-01-03-400w.jpg
+    medium: black-geometric-bowl-01-03-600w.jpg
+    large: black-geometric-bowl-01-03-1200w.jpg
 clay: hazelnut brown stoneware
 year: 2024
 ---
