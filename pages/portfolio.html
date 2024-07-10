@@ -13,6 +13,7 @@ menu: 1
 	{% assign jars = site.jars %}
 	{% assign mugs = site.mugs %} <!-- also cups -->
 	{% assign planters = site.planters %}
+	{% assign plates = site.plates %}
 	{% assign vases = site.vases %}
 
 	<aside class="portfolio__nav-wrapper">
@@ -21,6 +22,7 @@ menu: 1
 			<li class="portfolio-nav__item"><a href="#section--jars" class="portfolio-nav__link">Jars</a></li>
 			<li class="portfolio-nav__item"><a href="#section--mugs" class="portfolio-nav__link">Mugs</a></li>
 			<li class="portfolio-nav__item"><a href="#section--planters" class="portfolio-nav__link">Planters</a></li>
+			<li class="portfolio-nav__item"><a href="#section--plates" class="portfolio-nav__link">Plates</a></li>
 			<li class="portfolio-nav__item"><a href="#section--vases" class="portfolio-nav__link">Vases</a></li>
 		</ul>
 	</aside>
@@ -140,6 +142,35 @@ menu: 1
 		</div>
 	</article>
 	<!-- end planters -->
+
+	<!-- PLATES -->
+	<article class="portfolio__section--planters" id="section--plates">
+		<h2 class="portfolio-section__title" >Plates</h2>
+		<div class="portfolio-section__data-wrapper">
+			{% for plate in plates %}
+			<ul class="portfolio__metadata-wrapper" >
+				<!-- images -->
+				<li class="portfolio-metadata__carousel-wrapper">
+					<div class="js-nav-left">&lsaquo;</div>
+					<div class="js-nav-right">&rsaquo;</div>
+					<ul class="portfolio-metadata__carousel-viewport">
+						{% for images in plate.image-set %}
+						<li class="portfolio-metadata__images" tabindex="0">
+							<img loading="lazy"
+								 src="{{ 'assets/img/pottery/plates/600/' | append: images.medium | relative_url}}"
+								 alt="{{ plate.name }}"
+							/> 
+						</li> <!-- end image -->
+						{% endfor %} <!-- end images in planter.image-set -->
+					</ul> <!-- end carousel viewport -->
+				</li> <!-- end images -->
+				<li class="portfolio-metadata__name">{{ plate.name }}</li>
+				<li class="portfolio-metadata__details"><span>{{ plate.clay | capitalize }}</span>, <span>{{ plate.year }}</span></li>
+			</ul>
+			{% endfor %}
+		</div>
+	</article>
+	<!-- end plates -->
 
 	<!-- VASES -->
 	<article class="portfolio__section--vases" id="section--vases">
