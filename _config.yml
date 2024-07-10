@@ -1,7 +1,7 @@
 # 1. metadata
 title: Kat Donnally Studio
 baseurl: ""
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://katdonnally.studio" # the base hostname & protocol for your site, e.g. http://example.com
 
 description: >-
   Ceramicist located in Richmond, Virginia, making
