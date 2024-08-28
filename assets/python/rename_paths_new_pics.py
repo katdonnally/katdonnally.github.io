@@ -3,12 +3,13 @@
 
 import os
 
-img_dir = "C:/Users/Katherine/OneDrive/Clay/clay-pics-07-07-2024/pottery/"
+img_dir = "C:/Users/Katherine/OneDrive/Clay/clay-pics-08-20-24/pottery/"
 
 bowl_dir = img_dir + "bowls/400/" # this number changes depending on resolution
-jar_dir = img_dir + "jars/1200/" # can be 400, 600, 800, or 1200
+jar_dir = img_dir + "jars/400/" # can be 400, 600, 800, or 1200
 mug_dir = img_dir + "mugs/1200/"
 planter_dir = img_dir + "planters/1200/"
+plate_dir = img_dir + "plates/1200/"
 vase_dir = img_dir + "vases/1200/"
 
 # bowls
@@ -28,6 +29,10 @@ mug_dir_files = [mug for mug in mug_dir_contents if '.' in mug]
 # planters
 planter_dir_contents = os.listdir(planter_dir)
 planter_dir_files = [planter for planter in planter_dir_contents if '.' in planter]
+
+# plates
+plate_dir_contents = os.listdir(plate_dir)
+plate_dir_files = [plate for plate in plate_dir_contents if '.' in plate]
 
 # vases
 vase_dir_contents = os.listdir(vase_dir)
