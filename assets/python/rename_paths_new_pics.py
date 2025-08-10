@@ -3,7 +3,7 @@
 
 import os
 
-img_dir = "C:/Users/Katherine/OneDrive/Clay/clay-pics-08-20-24/pottery/"
+img_dir = "C:/Users/Katherine/OneDrive/Clay/clay-pics-2025-08-10/pottery/"
 
 bowl_dir = img_dir + "bowls/400/" # this number changes depending on resolution
 jar_dir = img_dir + "jars/400/" # can be 400, 600, 800, or 1200
@@ -40,7 +40,7 @@ vase_dir_files = [vase for vase in vase_dir_contents if '.' in vase]
 
 # plug in different details based on what you need:
 
-short_name_contents = [filename.split(".")[0] + "-1200w.jpg" for filename in vase_dir_files]
+short_name_contents = [filename.split(".")[0] + "-1200w.jpg" for filename in mug_dir_files]
 
-for i, filename in enumerate(vase_dir_files):
-	os.rename(vase_dir + filename, vase_dir + short_name_contents[i])
+for i, filename in enumerate(mug_dir_files):
+	os.rename(mug_dir + filename, mug_dir + short_name_contents[i])
