@@ -9,12 +9,12 @@ menu: 1
 
 	<h1 class="portfolio__title">Portfolio</h1>
 
-	{% assign bowls = site.bowls %}
-	{% assign jars = site.jars %}
-	{% assign mugs = site.mugs %} <!-- also cups -->
-	{% assign planters = site.planters %}
-	{% assign plates = site.plates %}
-	{% assign vases = site.vases %}
+	{% assign bowls = site.bowls | where: "show", "true" %}
+	{% assign jars = site.jars | where: "show", "true" %}
+	{% assign mugs = site.mugs | where: "show", "true" %} <!-- also cups -->
+	{% assign planters = site.planters | where: "show", "true" %}
+	{% assign plates = site.plates | where: "show", "true" %}
+	{% assign vases = site.vases | where: "show", "true" %}
 
 	<aside class="portfolio__nav-wrapper">
 		<ul class="portfolio-nav__link-list">
