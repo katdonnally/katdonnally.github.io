@@ -12,6 +12,7 @@ image-set:
     large: turq-berry-bowl-01-03-1200w.jpg
 clay: white stoneware
 year: 2024
+show: yes
 ---
 
 Turquoise and Honey Flux berry bowl.

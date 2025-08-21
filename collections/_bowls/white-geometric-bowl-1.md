@@ -12,6 +12,7 @@ image-set:
     large: white-geometric-bowl-01-03-1200w.jpg
 clay: hazelnut brown stoneware
 year: 2024
+show: yes
 ---
 
 A large white geometric bowl.
