@@ -10,6 +10,7 @@ image-set:
 clay: hazelnut brown stoneware
 year: 2024
 order: 1
+show: yes
 ---
 
 Black and white stripes on a curvy medium brown mug.

@@ -10,6 +10,7 @@ image-set:
 clay: white stoneware
 year: 2024
 order: 1
+show: no
 ---
 
 Marigold yellow celadon over bee underglaze transfers.

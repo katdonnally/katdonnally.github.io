@@ -7,6 +7,7 @@ image-set:
 clay: white stoneware
 year: 2023
 order: 1
+show: yes
 ---
 
 Christmas tree-shaped mugs with colorful dots for ornaments.

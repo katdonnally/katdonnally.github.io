@@ -16,6 +16,7 @@ image-set:
 clay: umbria stoneware
 year: 2024
 order: 1
+show: yes
 ---
 
 White snake underglaze transfers on dark clay.

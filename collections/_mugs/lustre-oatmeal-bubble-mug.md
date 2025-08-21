@@ -10,6 +10,7 @@ image-set:
 clay: hazelnut brown stoneware
 year: 2024
 order: 1
+show: no
 ---
 
 Oatmeal glaze layered over Iron Lustre on a bubble mug.

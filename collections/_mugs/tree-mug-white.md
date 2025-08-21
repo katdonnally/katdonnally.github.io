@@ -1,3 +1,4 @@
+---
 name: Matte white tree mug
 image-set:
   - small: tree-mug-white-01-400w.jpg
@@ -12,3 +13,5 @@ image-set:
 clay: hazelnut brown stoneware
 year: 2024
 order: 1
+show: no
+---

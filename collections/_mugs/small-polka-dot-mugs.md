@@ -10,6 +10,7 @@ image-set:
 clay: white stoneware
 year: 2024
 order: 1
+show: yes
 ---
 
 Black mugs with white polka dots and a white satin interior.

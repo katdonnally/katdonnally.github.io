@@ -10,6 +10,7 @@ image-set:
 clay: white stoneware
 year: 2024
 order: 1
+show: yes
 ---
 
 Honey Flux over turquoise on a white stoneware bubble mug.

@@ -10,4 +10,5 @@ image-set:
 clay: white stoneware
 year: 2023
 order: 1
+show: yes
 ---
