@@ -10,6 +10,7 @@ image-set:
 clay: white stoneware
 year: 2024
 order: 1
+show: yes
 ---
 
 One-piece trinket jar decorated with a rich blue glaze.

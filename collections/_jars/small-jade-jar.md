@@ -13,6 +13,7 @@ image-set:
 clay: hazelnut brown stoneware
 year: 2024
 order: 1
+show: no
 ---
 
 Small closed-form jade jar in brown clay.

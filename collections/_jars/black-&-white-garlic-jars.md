@@ -13,6 +13,7 @@ image-set:
 clay: white stoneware
 year: 2024
 order: 1
+show: no
 ---
 
 A set of 2 black and white garlic jars.

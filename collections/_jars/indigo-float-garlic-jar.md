@@ -13,6 +13,7 @@ image-set:
 clay: hazelnut brown stoneware
 year: 2024
 order: 1
+show: yes
 ---
 
 Garlic jar in medium brown clay with a rich blue glaze and a garlic bulb on top.

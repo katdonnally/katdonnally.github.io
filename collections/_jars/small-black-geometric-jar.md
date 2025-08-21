@@ -13,6 +13,7 @@ image-set:
 clay: hazelnut brown stoneware
 year: 2024
 order: 1
+show: yes
 ---
 
 Small closed-form geometric jar. Brown clay with black glaze.
