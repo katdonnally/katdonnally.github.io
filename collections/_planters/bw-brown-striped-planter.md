@@ -10,4 +10,5 @@ image-set:
 clay: hazelnut stoneware
 year: 2024
 order: 1
+show: yes
 ---
