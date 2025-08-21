@@ -1,5 +1,5 @@
 ---
-name: Cosmos & tulip vases
+name: Purple tulip vase
 image-set:
   - small: purple-tulip-vase-01-400w.jpg
     medium: purple-tulip-vase-01-600w.jpg
