@@ -10,6 +10,7 @@ image-set:
 clay: white stoneware
 year: 2024
 order: 1
+show: yes
 ---
 
 Large pitcher with vertical black & white stripes.

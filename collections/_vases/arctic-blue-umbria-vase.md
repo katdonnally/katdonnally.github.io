@@ -10,6 +10,7 @@ image-set:
 clay: umbria stoneware
 year: 2024
 order: 1
+show: yes
 ---
 
 Artic Blue glaze on dark brown clay with some clay left exposed.

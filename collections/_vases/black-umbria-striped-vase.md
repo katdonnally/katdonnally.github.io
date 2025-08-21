@@ -10,6 +10,7 @@ image-set:
 clay: umbria stoneware
 year: 2024
 order: 1
+show: no
 ---
 
 Bands of black glaze between stripes of exposed dark brown clay.

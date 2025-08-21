@@ -13,6 +13,7 @@ image-set:
 clay: umbria stoneware
 year: 2024
 order: 1
+show: no
 ---
 
 Dark brown clay with black & white snake transfers.
