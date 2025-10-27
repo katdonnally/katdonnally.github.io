@@ -1,6 +1,6 @@
 orig = '''
-- taped-ctd-dark-jar-01.jpg
-- taped-ctd-dark-jar-02.jpg'''
+- ursulas-garden-dark-taped-mug-01.jpg
+- ursulas-garden-dark-taped-mug-02.jpg'''
 
 remove_chars = orig.replace("\n", "").replace("\t", "").replace("- ", "").replace(" ", "")
 
@@ -19,10 +19,11 @@ newnames = f'''image-set:
     medium: {img_2}-600w.jpg
     large: {img_2}-1200w.jpg'''
 
-'''
-  - small: {img_3}-400w.jpg
+'''  - small: {img_3}-400w.jpg
     medium: {img_3}-600w.jpg
-    large: {img_3}-1200w.jpg
+    large: {img_3}-1200w.jpg'''
+
+'''
   - small: {img_4}-400w.jpg
     medium: {img_4}-600w.jpg
     large: {img_4}-1200w.jpg'''
