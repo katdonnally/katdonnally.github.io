@@ -3,11 +3,11 @@
 
 import os
 
-img_dir = "C:/Users/Katherine/OneDrive/Clay/clay-pics-2025-08-22/pottery/"
+img_dir = "C:/Users/Katherine/OneDrive/Clay/clay-pics-2025-10-01/pottery/"
 
-bowl_dir = img_dir + "bowls/1200/" # this number changes depending on resolution
-jar_dir = img_dir + "jars/1200/" # can be 400, 600, 800, or 1200
-mug_dir = img_dir + "mugs/1200/"
+bowl_dir = img_dir + "bowls/400/" # this number changes depending on resolution
+jar_dir = img_dir + "jars/400/" # can be 400, 600, 800, or 1200
+mug_dir = img_dir + "mugs/400/"
 planter_dir = img_dir + "planters/400/"
 vase_dir = img_dir + "vases/400/"
 
