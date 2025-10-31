@@ -1,5 +1,5 @@
 ---
-name: "May the forks be with you" spoon rest
+name: May the forks be with you spoon rest
 image-set:
   - small: forks-be-with-you-spoon-rest-01-400w.jpg
     medium: forks-be-with-you-spoon-rest-01-600w.jpg
