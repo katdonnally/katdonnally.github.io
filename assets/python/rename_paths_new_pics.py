@@ -3,14 +3,14 @@
 
 import os
 
-img_dir = "C:/Users/Katherine/OneDrive/Clay/clay-pics-2025-03-23/pottery/"
+img_dir = "C:/Users/Katherine/OneDrive/Clay/clay-pics-2025-10-15/pottery/"
 
-bowl_dir = img_dir + "bowls/400/" # this number changes depending on resolution
-jar_dir = img_dir + "jars/400/" # can be 400, 600, 800, or 1200
-mug_dir = img_dir + "mugs/400/"
-planter_dir = img_dir + "planters/1200/"
-plate_dir = img_dir + "plates/400/"
-vase_dir = img_dir + "vases/400/"
+bowl_dir = img_dir + "bowls/1200/" # this number changes depending on resolution
+jar_dir = img_dir + "jars/1200/" # can be 400, 600, 800, or 1200
+mug_dir = img_dir + "mugs/1200/"
+planter_dir = img_dir + "planters/400/"
+plate_dir = img_dir + "plates/1200/"
+vase_dir = img_dir + "vases/1200/"
 
 # bowls
 # contents include both files & directories
@@ -40,7 +40,7 @@ vase_dir_files = [vase for vase in vase_dir_contents if '.' in vase]
 
 # plug in different details based on what you need:
 
-short_name_contents = [filename.split(".")[0] + "-1200w.jpg" for filename in planter_dir_files]
+short_name_contents = [filename.split(".")[0] + "-1200w.jpg" for filename in vase_dir_files]
 
-for i, filename in enumerate(planter_dir_files):
-	os.rename(planter_dir + filename, planter_dir + short_name_contents[i])
+for i, filename in enumerate(vase_dir_files):
+	os.rename(vase_dir + filename, vase_dir + short_name_contents[i])
