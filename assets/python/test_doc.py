@@ -34,9 +34,6 @@ for type_paths in pottery_all_paths:
 		type_all_files.append(files_only)
 	pottery_all_files.append(type_all_files)
 
-bowls_all_files = pottery_all_files[0]
-bowls_all_paths = pottery_all_paths[0]
-
 # take file list, rename files with new endings
 # all paths = *of a certain type of pottery*
 # all files = *of a certain type of pottery*
