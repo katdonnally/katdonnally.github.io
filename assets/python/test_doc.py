@@ -16,18 +16,32 @@ vase_dir = img_dir + "vases/"
 sizes = ["400/", "600/", "800/", "1200/"]
 endings = ["-400w.jpg", "-600w.jpg", "-800w.jpg", "-1200w.jpg"]
 
-# list of all sizes of bowl paths (400, 600, 800, 1200)
-bowl_all_paths = [bowl_dir + s for s in sizes]
+pottery_paths = [bowl_dir, jar_dir, mug_dir, planter_dir, plate_dir, vase_dir]
 
-# eliminate any non-files
-# files in contents of directory inside list of directories
-bowl_all_files = []
-for filepath in bowl_all_paths:
-	files_only = [file for file in os.listdir(filepath) if os.path.isfile(os.path.join(filepath, file))]
-	bowl_all_files.append(files_only)
+pottery_all_paths = []
+for p in pottery_paths:
+	size_paths = []
+	for s in sizes:
+		size_path = p + s
+		size_paths.append(size_path)
+	pottery_all_paths.append(size_paths)
+
+pottery_all_files = []
+for type_paths in pottery_all_paths:
+	type_all_files = []
+	for filepath in type_paths:
+		files_only = [file for file in os.listdir(filepath) if os.path.isfile(os.path.join(filepath, file))]
+		type_all_files.append(files_only)
+	pottery_all_files.append(type_all_files)
+
+bowls_all_files = pottery_all_files[0]
+bowls_all_paths = pottery_all_paths[0]
 
 # take file list, rename files with new endings
-def renamePotteryType(all_files_list, all_paths_list):
+# all paths = *of a certain type of pottery*
+# all files = *of a certain type of pottery*
+# e.g. ['/pottery/mugs/600'], [['mug-test-400.jpg'], [alksdjf]] 
+def renamePotteryType(all_paths_list, all_files_list):
 	# generate new names for each size
 	all_new_names = []
 	for i, file_list in enumerate(all_files_list):
@@ -44,4 +58,6 @@ def renamePotteryType(all_files_list, all_paths_list):
 		for oldname, newname in zip(oldnames, newnames):
 			os.rename(size_path + oldname, size_path + newname)
 
-# renamePotteryType(bowl_all_files, bowl_all_paths)
+
+for paths, files in zip(pottery_all_paths, pottery_all_files):
+	renamePotteryType(paths, files)
