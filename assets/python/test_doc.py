@@ -18,7 +18,7 @@ endings = ["-400w.jpg", "-600w.jpg", "-800w.jpg", "-1200w.jpg"]
 
 pottery_paths = [bowl_dir, jar_dir, mug_dir, planter_dir, plate_dir, vase_dir]
 
-# [<bowl paths>, <jar paths>, etc.]
+# [[bowl 400, bowl 600, bowl 800, bowl 1200], [jar paths], etc.]
 pottery_all_paths = []
 for p in pottery_paths:
 	size_paths = []
@@ -29,6 +29,7 @@ for p in pottery_paths:
 
 
 # [[[bowl pics 400], [bowl pics 600], [bowl pics 800], [bowl pics 1200]], [jars...]]
+# len = 4, just hella nested
 pottery_all_files = []
 for type_paths in pottery_all_paths:
 	type_all_files = []
