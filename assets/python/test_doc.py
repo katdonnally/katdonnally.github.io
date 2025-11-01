@@ -18,6 +18,7 @@ endings = ["-400w.jpg", "-600w.jpg", "-800w.jpg", "-1200w.jpg"]
 
 pottery_paths = [bowl_dir, jar_dir, mug_dir, planter_dir, plate_dir, vase_dir]
 
+# [<bowl paths>, <jar paths>, etc.]
 pottery_all_paths = []
 for p in pottery_paths:
 	size_paths = []
@@ -26,6 +27,8 @@ for p in pottery_paths:
 		size_paths.append(size_path)
 	pottery_all_paths.append(size_paths)
 
+
+# [[[bowl pics 400], [bowl pics 600], [bowl pics 800], [bowl pics 1200]], [jars...]]
 pottery_all_files = []
 for type_paths in pottery_all_paths:
 	type_all_files = []
@@ -55,6 +58,8 @@ def renamePotteryType(all_paths_list, all_files_list):
 		for oldname, newname in zip(oldnames, newnames):
 			os.rename(size_path + oldname, size_path + newname)
 
-
+# execute
+'''
 for paths, files in zip(pottery_all_paths, pottery_all_files):
 	renamePotteryType(paths, files)
+'''
