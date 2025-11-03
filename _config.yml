@@ -38,6 +38,7 @@ collections:
   planters:
   plates:
   vases:
+  retired:
 
 # 3. assets
 sass:
