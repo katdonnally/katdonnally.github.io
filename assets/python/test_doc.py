@@ -39,10 +39,10 @@ for type_paths in pottery_all_paths:
 	pottery_all_files.append(type_all_files)
 
 # take file list, rename files with new endings
-# all paths = *of a certain type of pottery*
-# all files = *of a certain type of pottery*
+# all paths = all sizes of all types of pottery
+# all files = all filenames of all sizes of all types of pottery
 # e.g. ['/pottery/mugs/600'], [['mug-test-400.jpg'], [alksdjf]] 
-def renamePotteryType(all_paths_list, all_files_list):
+def renameAllPottery(all_paths_list, all_files_list):
 	# generate new names for each size
 	all_new_names = []
 	for i, file_list in enumerate(all_files_list):
@@ -62,5 +62,5 @@ def renamePotteryType(all_paths_list, all_files_list):
 # execute
 '''
 for paths, files in zip(pottery_all_paths, pottery_all_files):
-	renamePotteryType(paths, files)
+	renameAllPottery(paths, files)
 '''
