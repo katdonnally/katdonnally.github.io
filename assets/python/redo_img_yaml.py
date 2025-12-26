@@ -1,7 +1,7 @@
 orig = '''
-- cauldron-mug-2025-red-01.jpg
-- cauldron-mug-2025-red-02.jpg
-- cauldron-mugs-2025.jpg'''
+- winter-mugs-01.jpg
+- winter-mugs-02.jpg
+- winter-mugs-03.jpg'''
 
 remove_chars = orig.replace("\n", "").replace("\t", "").replace("- ", "").replace(" ", "")
 
@@ -27,7 +27,9 @@ newnames = f'''image-set:
 '''
   - small: {img_4}-400w.jpg
     medium: {img_4}-600w.jpg
-    large: {img_4}-1200w.jpg
+    large: {img_4}-1200w.jpg'''
+
+'''   
   - small: {img_5}-400w.jpg
     medium: {img_5}-600w.jpg
     large: {img_5}-1200w.jpg'''
