@@ -1,3 +1,7 @@
+// vars:
+@use '../vars/colors' as colors;
+@use '../vars/fonts' as fonts;
+
 /* About Page Styles: */ 
 
 .about-grid-wrapper {
@@ -19,7 +23,7 @@
 
 h1.about__title {
 	grid-area: title;
-	border-bottom: 4px solid $dim-gray;
+	border-bottom: 4px solid colors.$dim-gray;
 }
 
 .about__description-wrapper {
@@ -47,9 +51,9 @@ h1.about__title {
 	}
 	figcaption {
 		padding-top: .5rem;
-		font-family: $inconsolata;
+		font-family: fonts.$inconsolata;
 		font-style: italic;
-		color: $dim-gray;
+		color: colors.$dim-gray;
 	}
 	 @media screen and (max-width: 768px) {
 		img {

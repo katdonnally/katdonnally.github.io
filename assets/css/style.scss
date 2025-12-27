@@ -15,6 +15,28 @@
 // - Order:   least-to-most specific, so cascade flows properly
 //            (NB: vars first b/c can't invoke b/f define)
 
+
+
+// vars:
+@use 'vars/colors' as colors;
+@use 'vars/fonts' as fonts;
+
+// layouts:
+@use 'layouts/elements';
+@use 'layouts/default';
+@use 'layouts/general';
+
+// nav:
+@use 'nav/footer';
+@use 'nav/header';
+
+// pages:
+@use 'pages/about';
+@use 'pages/carousel-testing';
+@use 'pages/contact';
+@use 'pages/home';
+@use 'pages/portfolio';
+
 /* This is to use Liquid templating in CSS so that
    the links to background images actually work */
 .home-links__item {
@@ -34,23 +56,3 @@
 		background-image: url('{{ site.baseurl }}/assets/img/pottery/mugs/800/fall-bubble-mugs-2025-800w.jpg');
 	}
 }
-
-// vars:
-@import '_vars/colors';
-@import '_vars/fonts';
-
-// layouts:
-@import '_layouts/elements';
-@import '_layouts/default';
-@import '_layouts/general';
-
-// nav:
-@import '_nav/footer';
-@import '_nav/header';
-
-// pages:
-@import '_pages/about';
-@import '_pages/carousel-testing';
-@import '_pages/contact';
-@import '_pages/home';
-@import '_pages/portfolio';

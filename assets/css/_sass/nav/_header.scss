@@ -1,3 +1,7 @@
+// vars:
+@use '../vars/colors' as colors;
+@use '../vars/fonts' as fonts;
+
 /* Header Styles: */ 
 
 .header-wrapper {
@@ -32,7 +36,7 @@
 		}
 		svg {
 			height: 30px;
-			fill: $african-violet;
+			fill: colors.$african-violet;
 			transition: .3s fill;
 			&:hover, &:focus {
 				fill: white;
@@ -43,7 +47,7 @@
 		color: white;
 		transition: .3s color;
 		&:hover, &:focus {
-			color: $african-violet;
+			color: colors.$african-violet;
 		}
 
 	}
