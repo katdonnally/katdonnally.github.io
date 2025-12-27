@@ -1,5 +1,5 @@
 ---
-name: "Go Birds" mug
+name: Go Birds script font mug
 image-set:
   - small: go-birds-girly-01-400w.jpg
     medium: go-birds-girly-01-600w.jpg
