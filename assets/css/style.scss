@@ -4,18 +4,18 @@
 /* Styles */
 
 // Directories:
-// 1. _layouts --> most general styles, apply to >1 page
-// 2. _nav ------> header, footer styles
-// 3. _pages ----> page-specific styles (docname = page name)
-// 4. _vars -----> Sass variables for colors & font names
 
-// Imports:
-// - Purpose: puts together all tiny files into big file
-// - Syntax:  '_dir/_filename.scss' -> @import '_dir/filename'
-// - Order:   least-to-most specific, so cascade flows properly
-//            (NB: vars first b/c can't invoke b/f define)
+// 1. vars -----> Sass variables for colors & font names
+// 2. layouts --> most general styles, apply to >1 page
+// 3. nav ------> header, footer styles
+// 4. pages ----> page-specific styles (docname = page name)
 
+// SCSS Modules:
 
+// @use : imports SCSS file
+// Syntax: dir/_filename.scss -> @use 'dir/filename'
+// Setting variables: @use 'dir/filename' as varname
+// Using SCSS vars from a named module: 'modulename.$varname'
 
 // vars:
 @use 'vars/colors' as colors;
