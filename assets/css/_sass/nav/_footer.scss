@@ -1,3 +1,7 @@
+// vars:
+@use '../vars/colors' as colors;
+@use '../vars/fonts' as fonts;
+
 /* Footer Styles: */ 
 
 .footer-wrapper {
@@ -69,10 +73,10 @@ h3.footer-logo__name {
 	color: white;
 	a {
 		color: white;
-		font-family: $inconsolata;
+		font-family: fonts.$inconsolata;
 		transition: color .3s;
 		&:hover, &:focus {
-			color: $african-violet;
+			color: colors.$african-violet;
 		}
 
 	}

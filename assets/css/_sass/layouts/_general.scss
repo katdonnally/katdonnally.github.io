@@ -1,3 +1,7 @@
+// vars:
+@use '../vars/colors' as colors;
+@use '../vars/fonts' as fonts;
+
 /* General Layout Styles: */
 
 * {
@@ -10,7 +14,7 @@ body {
 	grid-template-rows: auto 1fr auto;
 	margin: 0;
 	padding: 0;
-	font-family: $poppins;
+	font-family: fonts.$poppins;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;

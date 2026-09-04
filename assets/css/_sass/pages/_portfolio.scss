@@ -1,3 +1,7 @@
+// vars:
+@use '../vars/colors' as colors;
+@use '../vars/fonts' as fonts;
+
 html {
 	scroll-behavior: smooth;
 }
@@ -18,7 +22,7 @@ html {
 }
 
 .portfolio__title {
-	border-bottom: 4px solid $dim-gray;
+	border-bottom: 4px solid colors.$dim-gray;
 }
 
 /* NAV */
@@ -40,14 +44,14 @@ li.portfolio-nav__item {
 }
 
 a.portfolio-nav__link {
-	color: $dim-gray;
+	color: colors.$dim-gray;
 	font-weight: bold;
 	font-size: 1.5rem;
-	border-bottom: 2px solid $dim-gray;
+	border-bottom: 2px solid colors.$dim-gray;
 	transition: color .3s;
 	&:hover, &:focus {
-		color: $african-violet;
-		border-bottom: 2px solid $african-violet;
+		color: colors.$african-violet;
+		border-bottom: 2px solid colors.$african-violet;
 	}
 	@media screen and (max-width: 500px) {
 		font-size: 1rem;
@@ -85,7 +89,7 @@ article[class*="portfolio__section"] {
 // inside each section:
 
 .portfolio-section__title {
-	font-family: $oswald;
+	font-family: fonts.$oswald;
 	font-weight: 500;
 	border-bottom: 1px solid black;
 	@media screen and (min-width: 900px) {
@@ -210,10 +214,10 @@ li.portfolio-metadata__image {
 }
 
 .portfolio-metadata__details {
-	font-family: $inconsolata;
+	font-family: fonts.$inconsolata;
 	line-height: 1;
 	span {
-		color: $dim-gray;
+		color: colors.$dim-gray;
 		&:first-of-type {
 
 		}
