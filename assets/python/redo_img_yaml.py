@@ -1,7 +1,7 @@
 orig = '''
-- large-black-white-vase-01.jpg
-- large-black-white-vase-02.jpg
-- black-white-oil-bottle-02-01.jpg'''
+- mushroom-spoon-rest-01.jpg
+- red-mushroom-mug-02.jpg
+- purple-mushroom-mug-03.jpg'''
 
 remove_chars = orig.replace("\n", "").replace("\t", "").replace("- ", "").replace(" ", "")
 
@@ -24,11 +24,10 @@ newnames = f'''image-set:
     medium: {img_3}-600w.jpg
     large: {img_3}-1200w.jpg'''
 
-'''  
+'''
   - small: {img_4}-400w.jpg
     medium: {img_4}-600w.jpg
-    large: {img_4}-1200w.jpg'''
-''' 
+    large: {img_4}-1200w.jpg
   - small: {img_5}-400w.jpg
     medium: {img_5}-600w.jpg
     large: {img_5}-1200w.jpg'''
