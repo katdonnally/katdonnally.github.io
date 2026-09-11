@@ -13,6 +13,12 @@ image-set:
   - small: black-2-part-jar-02-400w.jpg
     medium: black-2-part-jar-02-600w.jpg
     large: black-2-part-jar-02-1200w.jpg
+  - small: hf-jar-01-400w.jpg
+    medium: hf-jar-01-600w.jpg
+    large: hf-jar-01-1200w.jpg
+  - small: hf-jar-02-400w.jpg
+    medium: hf-jar-02-600w.jpg
+    large: hf-jar-02-1200w.jpg
 clay: Sheltowee stoneware
 year: 2026
 order: 1
