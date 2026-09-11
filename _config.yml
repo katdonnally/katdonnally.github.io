@@ -63,3 +63,9 @@ defaults:
 #    'order' var of value '10'
 # 3. all pages have no-style-2 layout unless
 #    otherwise specified
+
+# plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sass-converter
