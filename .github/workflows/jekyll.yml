@@ -20,21 +20,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3' # Specify your preferred Ruby version
           bundler-cache: true # Runs 'bundle install' and caches gems automatically
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
       - name: Build with Jekyll
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
