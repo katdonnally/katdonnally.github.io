@@ -12,4 +12,4 @@ year: 2025
 show: yes
 ---
 
-Pink & white striped jar with handles.
+A pink & white striped jar with handles.

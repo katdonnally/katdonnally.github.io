@@ -12,4 +12,4 @@ year: 2025
 show: yes
 ---
 
-Matte lavender two-part bubble jar with glossy accents.
+A matte lavender two-part bubble jar with glossy accents.

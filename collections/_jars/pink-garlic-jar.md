@@ -12,4 +12,4 @@ year: 2026
 show: yes
 ---
 
-A set of sugar or salt jars, one white and one sparkly black, both in a medium brown clay.
+A mottled pink garlic jar with a subtle two-bubble shape.

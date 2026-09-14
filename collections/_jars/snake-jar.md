@@ -12,4 +12,4 @@ year: 2025
 show: yes
 ---
 
-Closed-form trinket jar with snake underglaze transfer and purple celadon glaze.
+A closed-form trinket jar with snake underglaze transfer and purple celadon glaze.

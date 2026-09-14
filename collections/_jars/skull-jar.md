@@ -12,4 +12,4 @@ year: 2025
 show: yes
 ---
 
-Closed-form trinket jar with skull underglaze transfer.
+A closed-form trinket jar with skull underglaze transfer.

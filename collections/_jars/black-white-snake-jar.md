@@ -16,4 +16,4 @@ order: 1
 show: yes
 ---
 
-Black and white closed form trinket jar with a snake transfer.
+A black and white closed form trinket jar with a snake transfer.
