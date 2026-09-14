@@ -9,3 +9,5 @@ year: 2025
 order: 1
 show: yes
 ---
+
+A hand-painted stoneware plate depicting an orange & white koi fish.

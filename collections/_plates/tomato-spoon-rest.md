@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Hand-painted spoon rest depicting cherry tomatoes.
+A hand-painted white stoneware spoon rest depicting cherry tomatoes.

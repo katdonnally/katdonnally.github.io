@@ -11,4 +11,4 @@ show: yes
 
 ---
 
-Rectangular glasses holder with closed eyes.
+A rectangular glasses holder with closed eyes.

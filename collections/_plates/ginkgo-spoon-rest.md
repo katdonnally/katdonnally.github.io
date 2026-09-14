@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Black & white ginkgo spoon rest.
+A black & white spoon rest with a ginkgo leaf underglaze transfer pattern.

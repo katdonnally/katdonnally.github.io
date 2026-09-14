@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-White spoon rest with black fineline greenery painted on, with a black rim.
+A white spoon rest painted with black fineline greenery & a black rim.

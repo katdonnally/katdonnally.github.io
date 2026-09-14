@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Spoon rest with black spiderweb underglaze transfer.
+A white stoneware spoon rest decorated with black spiderweb underglaze transfer.

@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Black & white oval plate with snake transfer.
+A black & white oval plate decorated with a snake underglaze transfer.

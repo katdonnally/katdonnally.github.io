@@ -10,4 +10,4 @@ order: 1
 show: yes
 ---
 
-Rectangular tray with moon underglaze transfers and a light purple border.
+A rectangular tray with moon underglaze transfers and a light purple border.

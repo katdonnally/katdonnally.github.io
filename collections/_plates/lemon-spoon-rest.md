@@ -10,4 +10,4 @@ order: 1
 show: yes
 ---
 
-White spoon rest with hand-painted lemons on a branch with a yellow rim.
+A white stoneware spoon rest with hand-painted lemons on a branch with a yellow rim.

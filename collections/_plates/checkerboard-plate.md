@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Black & white square checkerboard plate.
+A hand-painted black & white square checkerboard plate.
