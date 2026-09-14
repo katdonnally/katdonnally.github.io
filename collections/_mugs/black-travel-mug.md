@@ -16,4 +16,4 @@ order: 1
 show: yes
 ---
 
-Black & gray travel mug.
+A glossy black & gray travel mug.

@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Sapphire blue bubble mug with flux glaze on top.
+A sapphire blue bubble mug with light blue flux glaze along the top third.

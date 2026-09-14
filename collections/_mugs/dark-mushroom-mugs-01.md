@@ -10,9 +10,9 @@ image-set:
   - small: dark-mushroom-mugs-03-400w.jpg
     medium: dark-mushroom-mugs-03-600w.jpg
     large: dark-mushroom-mugs-03-1200w.jpg
-clay: umbria stoneware
+clay: Umbria stoneware
 year: 2025
 show: yes
 ---
 
-Two dark brown mugs glazed with white mushroom prints and Honey Flux.
+Two dark brown stoneware mugs decorated with white mushroom underglaze transfers, & finished with a flux glaze on the top half.

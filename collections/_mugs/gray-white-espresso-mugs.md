@@ -15,3 +15,5 @@ year: 2025
 order: 1
 show: yes
 ---
+
+Matte gray and glossy white glazes adorn these small espresso mugs, shaped with a slightly flared straight profile and a two-bubble profile.

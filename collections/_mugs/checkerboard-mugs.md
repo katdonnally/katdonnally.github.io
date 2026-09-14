@@ -1,5 +1,5 @@
 ---
-name: Checkerboard mugs
+name: Black & white checkerboard mugs
 image-set:
   - small: checkerboard-mugs-02-400w.jpg
     medium: checkerboard-mugs-02-600w.jpg
@@ -18,3 +18,5 @@ year: 2024
 order: 1
 show: yes
 ---
+
+A pair of curvy stoneware mugs with hand-painted black & white checkers.

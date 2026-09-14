@@ -15,4 +15,4 @@ year: 2025
 show: yes
 ---
 
-Cauldron mug with black and purple glaze.
+A cauldron mug with moody black and purple glazes.

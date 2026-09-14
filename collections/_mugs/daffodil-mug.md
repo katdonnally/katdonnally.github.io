@@ -15,4 +15,4 @@ year: 2026
 show: yes
 ---
 
-Hand-painted daffodil mug, reflecting the hopefulness of spring.
+A hand-painted daffodil mug, reflecting the hopefulness of spring.

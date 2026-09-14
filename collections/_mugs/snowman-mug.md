@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-White mug painted with a snowman on one side and a gingerbread man on the other.
+A white mug depicting a hand-painted snowman on one side and a hand-painted gingerbread man on the other.

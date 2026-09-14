@@ -15,4 +15,4 @@ year: 2025
 show: yes
 ---
 
-White mug with pumpkins of various sizes painted all around the circumference, with orange interior.
+A white stoneware mug with pumpkins of various sizes painted all around the circumference, with orange interior.

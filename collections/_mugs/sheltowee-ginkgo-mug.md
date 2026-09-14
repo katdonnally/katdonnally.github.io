@@ -10,10 +10,10 @@ image-set:
   - small: sheltowee-ginkgo-mug-03-400w.jpg
     medium: sheltowee-ginkgo-mug-03-600w.jpg
     large: sheltowee-ginkgo-mug-03-1200w.jpg
-clay: Iceman stoneware
+clay: Sheltowee stoneware
 year: 2025
 order: 1
 show: yes
 ---
 
-Brown mug adorned with a white ginkgo leaf pattern.
+A brown stoneware mug adorned with a white ginkgo leaf underglaze pattern, finished with a glossy clear exterior.

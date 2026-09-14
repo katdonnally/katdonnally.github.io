@@ -16,4 +16,4 @@ order: 1
 show: yes
 ---
 
-Mug depicting hand-painted oranges.
+A white stoneware mug depicting hand-painted oranges.

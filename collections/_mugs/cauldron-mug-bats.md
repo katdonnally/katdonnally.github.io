@@ -9,4 +9,4 @@ year: 2025
 show: yes
 ---
 
-Cauldron mug with bat underglaze transfers and sparkly black glaze.
+A cauldron mug with bat underglaze transfers and sparkly black glaze.

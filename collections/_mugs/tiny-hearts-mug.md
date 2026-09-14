@@ -12,4 +12,4 @@ year: 2026
 show: yes
 ---
 
-A simple, straight-walled white mug adorned with a pattern of tiny black hearts, matching a black interior.
+A simple, straight-walled white mug decorated with a pattern of tiny black hearts, matching a black interior.

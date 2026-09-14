@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-White mug with black interior and fineline greenery accents.
+A white stoneware mug with black interior and fineline greenery accents.

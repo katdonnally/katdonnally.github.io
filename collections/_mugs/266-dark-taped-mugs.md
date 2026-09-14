@@ -1,5 +1,5 @@
 ---
-name: Dark clay mugs with colorful glazes
+name: Moody deep red & blue mugs
 image-set:
   - small: 266-dark-taped-mugs-01-400w.jpg
     medium: 266-dark-taped-mugs-01-600w.jpg

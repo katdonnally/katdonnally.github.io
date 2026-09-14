@@ -15,4 +15,4 @@ year: 2025
 show: yes
 ---
 
-White mug with lemons on the front and back with yellow interior.
+A white stoneware mug depicting a trio of hand-painted lemons on the front, and a single larger lemon on the back.

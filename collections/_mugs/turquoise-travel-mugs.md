@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Large & small turquoise travel mugs.
+A pair of large & small turquoise travel mugs.

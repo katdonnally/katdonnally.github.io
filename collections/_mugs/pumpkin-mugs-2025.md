@@ -12,4 +12,4 @@ year: 2025
 show: yes
 ---
 
-Mugs shaped and painted like pumpkins, with the stem being the handle.
+Mugs shaped and painted like pumpkins, with the handle serving as the pumpkin's stem.

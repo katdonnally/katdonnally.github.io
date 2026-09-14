@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Travel mug hand-painted with winding olive branches.
+A white stoneware travel mug hand-painted with winding olive branches.

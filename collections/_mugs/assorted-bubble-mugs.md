@@ -15,3 +15,5 @@ year: 2024
 order: 1
 show: yes
 ---
+
+Two bubble mugs, one turquoise and the other a complex purple.

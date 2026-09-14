@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Mug with hand-painted cow spots.
+A white mug with hand-painted cow spots.

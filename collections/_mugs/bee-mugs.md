@@ -12,3 +12,5 @@ year: 2024
 order: 1
 show: yes
 ---
+
+Bee underglaze transfers buzz around this pair of mugs, with hand-painted paths between them and a yellow celadon glaze.

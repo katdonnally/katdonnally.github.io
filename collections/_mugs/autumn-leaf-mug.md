@@ -12,4 +12,4 @@ year: 2025
 show: yes
 ---
 
-White mug with fall-colored oak and maple leaves painted.
+A white stoneware mug, hand-painted with autumn-colored oak and maple leaves.

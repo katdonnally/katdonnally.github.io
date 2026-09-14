@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Black & white striped travel mug.
+A white stoneware travel mug with crisp black & white stripes.

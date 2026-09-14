@@ -15,4 +15,4 @@ year: 2025
 show: yes
 ---
 
-Cauldron mug with black and red glaze.
+A moody cauldron mug with black and red glazes.

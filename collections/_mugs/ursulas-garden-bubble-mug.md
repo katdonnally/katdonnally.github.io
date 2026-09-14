@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Bubble mug glazed in glossy black and purple.
+A bubble mug finished with glossy black and purple glazes.

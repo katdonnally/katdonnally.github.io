@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Bubble mug glazed with matte lavender and accented with a glossy glaze.
+A bubble mug glazed with matte lavender and accented with a glossy flux glaze.

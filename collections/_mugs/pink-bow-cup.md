@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Pencil or makeup brush holder decorated with delicate light pink bows.
+A pencil or makeup brush holder decorated with delicate light pink bows.
