@@ -1,6 +1,6 @@
 orig = '''
-- snowflake-mug-01.jpg
-- snowflake-mug-02.jpg
+- sheltowee-geometric-mug-01.jpg
+- sheltowee-geometric-mug-02.jpg
 - fl-travel-mug-02.jpg'''
 
 remove_chars = orig.replace("\n", "").replace("\t", "").replace("- ", "").replace(" ", "")
