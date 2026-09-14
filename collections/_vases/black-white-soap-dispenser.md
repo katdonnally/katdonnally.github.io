@@ -10,4 +10,4 @@ order: 1
 show: yes
 ---
 
-Black & white glossy soap dispenser with a cork top.
+A glossy black & white soap dispenser with a cork top.

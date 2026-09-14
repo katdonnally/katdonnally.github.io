@@ -10,4 +10,4 @@ order: 1
 show: yes
 ---
 
-Matte gray & glossy white soap dispenser with a cork top.
+A matte gray & glossy white soap dispenser with a cork top.

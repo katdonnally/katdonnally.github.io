@@ -15,3 +15,5 @@ year: 2024
 order: 1
 show: yes
 ---
+
+A hand-built business card holder with black & white stripes.

@@ -10,4 +10,4 @@ order: 1
 show: yes
 ---
 
-Large, curvy vase featuring vertical black & white stripes.
+A large, curvy vase featuring vertical black & white stripes.

@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Soap dispenser with textured body and blue glaze.
+A soap dispenser with textured body and blue glaze.

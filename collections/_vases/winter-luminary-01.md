@@ -10,4 +10,4 @@ order: 1
 show: yes
 ---
 
-Christmas-tree-shaped luminary on a small catch with white glaze.
+A Christmas-tree-shaped luminary on a small catch with white glaze.

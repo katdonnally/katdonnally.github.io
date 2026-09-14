@@ -19,4 +19,4 @@ order: 1
 show: yes
 ---
 
-Large white vase with butterflies native to the artist's home state of Virginia hand-painted throughout the vase's surface.
+A large white vase with butterflies native to the artist's home state of Virginia hand-painted throughout the vase's surface.

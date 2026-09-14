@@ -13,4 +13,4 @@ order: 1
 show: yes
 ---
 
-Large, modern urn-shaped vase dipped in black & white glazes.
+A large, modern urn-shaped vase dipped in black & white glazes.
