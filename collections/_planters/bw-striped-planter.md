@@ -7,10 +7,10 @@ image-set:
   - small: bw-striped-planter-01-02-400w.jpg
     medium: bw-striped-planter-01-02-600w.jpg
     large: bw-striped-planter-01-02-1200w.jpg
-clay: hazelnut brown stoneware
+clay: Iceman stoneware
 year: 2024
 order: 1
 show: yes
 ---
 
-Curvy planter in white clay with black and white stripes.
+A curvy planter in white stoneware painted with black and white stripes.

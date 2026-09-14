@@ -10,4 +10,4 @@ order: 1
 show: yes
 ---
 
-Moon-shaped planter with lots of craters and white glaze.
+A moon-shaped planter with lots of craters and white glaze.
