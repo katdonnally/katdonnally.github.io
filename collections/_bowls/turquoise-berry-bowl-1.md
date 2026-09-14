@@ -15,4 +15,4 @@ year: 2024
 show: yes
 ---
 
-Turquoise and Honey Flux berry bowl.
+A large berry bowl in shades of turquoise, with a light flux glaze around the edges.

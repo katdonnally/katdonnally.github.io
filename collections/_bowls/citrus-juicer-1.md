@@ -7,9 +7,9 @@ image-set:
   - small: citrus-juicer-02-400w.jpg
     medium: citrus-juicer-02-600w.jpg
     large: citrus-juicer-02-1200w.jpg
-clay: white speckle stoneware
+clay: White speckle stoneware
 year: 2025
 show: yes
 ---
 
-A light turquoise citrus juicer.
+A light turquoise citrus juicer in a white, speckled stoneware.
