@@ -18,8 +18,7 @@
 // Using SCSS vars from a named module: 'modulename.$varname'
 
 // vars:
-@use 'vars/colors' as colors;
-@use 'vars/fonts' as fonts;
+// declared inside each @use partial file
 
 // layouts:
 @use 'layouts/elements';
