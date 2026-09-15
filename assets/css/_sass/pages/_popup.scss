@@ -1,0 +1,104 @@
+// vars:
+@use '../vars/colors' as colors;
+@use '../vars/fonts' as fonts;
+
+// main - dark background
+.popup-bg-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background-color: hsla(0, 0%, 0%, 75%);
+	z-index: 2;
+}
+
+// inner main - white background
+.popup-content-wrapper {
+	position: relative;
+	display: flex;
+//	align-items: center;
+	width: 80vw;
+	height: 80vh;
+	background-color: white;
+	border: 4px solid black;
+}
+
+.popup-content__x-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
+	background-color: white;
+	transition: background-color .3s;
+	&:hover {
+		cursor: pointer;
+		background-color: colors.$african-violet;
+	}
+	span {
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+		font-weight: 700;
+	}
+}
+
+.popup-content__info {
+	display: grid;
+	grid-template-areas: "img title"
+						 "img year"
+						 "img description"
+						 "... description";
+	grid-template-rows: auto auto auto 1fr;
+	grid-template-columns: auto 1fr;
+	list-style: none;
+	padding: 1.5rem;
+	margin: 0;
+	// border: 2px solid red;
+	li {
+		// border: 2px solid blue;
+		margin-left: 0;
+	}
+}
+
+.popup__image-wrapper {
+	position: relative;
+	grid-area: img;
+	height: 500px;
+	padding-right: 2rem;
+	img {
+		height: 100%;
+		border: 4px solid black;
+	}
+}
+
+.popup-item__name {
+	grid-area: title;
+	font-family: fonts.$oswald;
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+.popup-item__metadata {
+	grid-area: year;
+	font-family: fonts.$inconsolata;
+	font-size: 1.5rem;
+}
+
+.popup-item__content {
+	grid-area: description;
+	color: colors.$dim-gray;
+	padding-top: 1.25rem;
+	margin-top: 1.25rem;
+	border-top: 2px solid colors.$dim-gray;
+	p {
+		font-size: 1.25rem;
+		font-style: italic;
+	}
+}

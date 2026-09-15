@@ -1,0 +1,29 @@
+---
+title: Pop Up Window
+layout: default
+permalink: /popup/
+menu: 1
+---
+
+{% assign bowls = site.bowls | where: "show", "true" %}
+{% assign bowl = bowls[0] %}
+
+<h1>Popup</h1>
+
+<main class="popup-bg-wrapper">
+	<main class="popup-content-wrapper">
+		<section class="popup-content__x-button"><span>X</span></section>
+		<ul class="popup-content__info">
+			<li class="popup__image-wrapper">
+				<!-- eventually be carousel images -->
+				{% assign images = bowl.image-set[0] %}
+				<img src="{{ 'assets/img/pottery/bowls/600/' | append: images.medium | relative_url}}" alt="{{ bowl.name }}"/>
+			</li>
+			<li class="popup-item__name">{{ bowl.name }}</li>
+			<li class="popup-item__metadata">
+				<span>{{ bowl.clay }}</span>, <span>{{ bowl.year }}</span>
+			</li>
+			<li class="popup-item__content">{{ bowl.content }}</li>
+		</ul>
+	</main>
+</main>
