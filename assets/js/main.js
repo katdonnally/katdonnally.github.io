@@ -33,15 +33,8 @@ if (document.querySelector('.portfolio-wrapper') || document.querySelector('.pop
 
 if (document.querySelector('.popup-bg-wrapper')) {
 	// popup navigation
-	let portfolioItem = document.querySelector('.popup-dummy-wrapper');
 	let popUpWrapper = document.querySelector('.popup-bg-wrapper');
 	let xButton = document.querySelector('.popup-content__x-button');
-
-	// portfolio target content
-	let portfolioImageWrapper = document.querySelector('.dummy-item__image-wrapper');
-	let portfolioItemName = document.querySelector('.dummy-item__name');
-	let portfolioMetadata = document.querySelector('.dummy-item__metadata');
-	let portfolioContent = document.querySelector('.dummy-item__content');
 
 	// popup content
 	let modalImageWrapper = document.querySelector('.popup-item__image-wrapper');
@@ -49,38 +42,35 @@ if (document.querySelector('.popup-bg-wrapper')) {
 	let modalMetadata = document.querySelector('.popup-item__metadata');
 	let modalContent = document.querySelector('.popup-item__content');
 
-	// image
-	let portfolioImage = portfolioImageWrapper.children[0];
-	let imageClone = portfolioImage.cloneNode(); // so appendChild doesn't steal it
-
-	function displayPopUp() {
-		popUpWrapper.style.display = "flex";
-		modalImageWrapper.appendChild(imageClone);
-		modalItemName.textContent = portfolioItemName.textContent;
-		modalMetadata.innerHTML = portfolioMetadata.innerHTML;
-		modalContent.innerHTML = portfolioContent.innerHTML;
-	}
+	let portfolioRealItems = document.querySelectorAll('.portfolio__metadata-wrapper');
 
 	function hidePopUp() {
 		popUpWrapper.style.display = "none";
 		modalItemName.textContent = "";
 	}
 
-	portfolioItem.addEventListener('click', displayPopUp);
-	xButton.addEventListener('click', hidePopUp);
-
-
-	/***/
-
-	let portfolioRealItems = document.querySelectorAll('.portfolio__metadata-wrapper');
-
 	function clickRealItem() {
-		console.log(this.children[1]);
 		popUpWrapper.style.display = "flex";
+
+		let itemName = this.children[1];
+		modalItemName.textContent = itemName.textContent;
+
+		let itemDetails = this.children[2];
+		modalMetadata.innerHTML = itemDetails.innerHTML;
+
+		let itemContent = this.children[3];
+		modalContent.textContent = itemContent.textContent;
+
+		// images
+		let carouselWrapper = this.children[0];
+		console.log(carouselWrapper);
+		modalImageWrapper.innerHTML = carouselWrapper.innerHTML;
 	}
 
 	for (let item of portfolioRealItems) {
 		item.addEventListener('click', clickRealItem);
 	}
+
+	xButton.addEventListener('click', hidePopUp);
 }
 
