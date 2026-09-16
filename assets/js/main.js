@@ -32,29 +32,18 @@ if (document.querySelector('.portfolio-wrapper')) {
 }
 
 if (document.querySelector('.popup-bg-wrapper')) {
-	let popUpButton = document.getElementById('popup-button');
-	classes = popUpButton.classList;
+	let portfolioItem = document.querySelector('.popup-dummy-wrapper');
+	let popUpWrapper = document.querySelector('.popup-bg-wrapper');
+	let xButton = document.querySelector('.popup-content__x-button');
 
-	console.log(classes);
-
-	function openPopUp() {
-		if (popUpButton.classList.contains('popup-content__x-button--hide')) {
-			popUpButton.classList.toggle('popup-content__x-button--hide');
-			popUpButton.classList.add('.popup-content__x-button--show');
-			console.log('show');
-			console.log(popUpButton.classList[0]);
-		} 
-		
+	function displayPopUp() {
+		popUpWrapper.style.display = "flex";
 	}
 
-	function closePopUp() {
-		if (popUpButton.classList.contains('popup-content__x-button--show')) {
-			popUpButton.classList.toggle('popup-content__x-button--show');
-			popUpButton.classList.toggle('popup-content__x-button--hide');
-			console.log('hide');
-		}
+	function hidePopUp() {
+		popUpWrapper.style.display = "none";
 	}
 
-	popUpButton.addEventListener('click', openPopUp);
-	popUpButton.addEventListener('click', closePopUp);
+	portfolioItem.addEventListener('click', displayPopUp);
+	xButton.addEventListener('click', hidePopUp);
 }
