@@ -3,14 +3,40 @@
 @use '../vars/fonts' as fonts;
 
 
+/* 1. Portfolio Item Styles: */
+
 .popup-dummy-wrapper {
 	height: 400px;
 	width: 400px;
 	background-color: pink;
+	list-style-type: none;
+	padding: 1rem;
 	li {
 
 	}
 }
+
+.dummy-item__image-wrapper {
+	img {
+		height: 300px;
+	}
+}
+
+.dummy-item__name {
+	span {
+
+	}
+}
+
+.dummy-item__metadata {
+
+}
+
+.dummy-item__content {
+
+}
+
+/* 2. Popup Styles: */
 
 // main - dark background
 .popup-bg-wrapper {
@@ -75,7 +101,7 @@
 	}
 }
 
-.popup__image-wrapper {
+.popup-item__image-wrapper {
 	position: relative;
 	grid-area: img;
 	height: 500px;
