@@ -32,16 +32,39 @@ if (document.querySelector('.portfolio-wrapper')) {
 }
 
 if (document.querySelector('.popup-bg-wrapper')) {
+	// popup navigation
 	let portfolioItem = document.querySelector('.popup-dummy-wrapper');
 	let popUpWrapper = document.querySelector('.popup-bg-wrapper');
 	let xButton = document.querySelector('.popup-content__x-button');
 
+	// portfolio target content
+	let portfolioImageWrapper = document.querySelector('.dummy-item__image-wrapper');
+	let portfolioItemName = document.querySelector('.dummy-item__name');
+	let portfolioMetadata = document.querySelector('.dummy-item__metadata');
+	let portfolioContent = document.querySelector('.dummy-item__content');
+
+	// popup content
+	let modalImageWrapper = document.querySelector('.popup-item__image-wrapper');
+	let modalItemName = document.querySelector('.popup-item__name');
+	let modalMetadata = document.querySelector('.popup-item__metadata');
+	let modalContent = document.querySelector('.popup-item__content');
+
+	// image
+	let portfolioImage = portfolioImageWrapper.children[0];
+	let imageClone = portfolioImage.cloneNode(); // so appendChild doesn't steal it
+
 	function displayPopUp() {
 		popUpWrapper.style.display = "flex";
+		modalImageWrapper.appendChild(imageClone);
+		modalItemName.textContent = portfolioItemName.textContent;
+		modalMetadata.innerHTML = portfolioMetadata.innerHTML;
+		modalContent.innerHTML = portfolioContent.innerHTML;
+
 	}
 
 	function hidePopUp() {
 		popUpWrapper.style.display = "none";
+		modalItemName.textContent = "";
 	}
 
 	portfolioItem.addEventListener('click', displayPopUp);
