@@ -30,3 +30,31 @@ if (document.querySelector('.portfolio-wrapper')) {
 		leftArrows[i].addEventListener('touchstart', toTheStart);
 	}
 }
+
+if (document.querySelector('.popup-bg-wrapper')) {
+	let popUpButton = document.getElementById('popup-button');
+	classes = popUpButton.classList;
+
+	console.log(classes);
+
+	function openPopUp() {
+		if (popUpButton.classList.contains('popup-content__x-button--hide')) {
+			popUpButton.classList.toggle('popup-content__x-button--hide');
+			popUpButton.classList.add('.popup-content__x-button--show');
+			console.log('show');
+			console.log(popUpButton.classList[0]);
+		} 
+		
+	}
+
+	function closePopUp() {
+		if (popUpButton.classList.contains('popup-content__x-button--show')) {
+			popUpButton.classList.toggle('popup-content__x-button--show');
+			popUpButton.classList.toggle('popup-content__x-button--hide');
+			console.log('hide');
+		}
+	}
+
+	popUpButton.addEventListener('click', openPopUp);
+	popUpButton.addEventListener('click', closePopUp);
+}
