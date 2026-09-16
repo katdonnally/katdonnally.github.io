@@ -2,12 +2,22 @@
 @use '../vars/colors' as colors;
 @use '../vars/fonts' as fonts;
 
+
+.popup-dummy-wrapper {
+	height: 400px;
+	width: 400px;
+	background-color: pink;
+	li {
+
+	}
+}
+
 // main - dark background
 .popup-bg-wrapper {
 	position: absolute;
 	top: 0;
 	left: 0;
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
