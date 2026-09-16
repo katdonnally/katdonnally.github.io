@@ -16,6 +16,18 @@ menu: 1
 	{% assign plates = site.plates | where: "show", "true" %}
 	{% assign vases = site.vases | where: "show", "true" %}
 
+	<article class="popup-bg-wrapper">
+		<main class="popup-content-wrapper">
+			<section class="popup-content__x-button">X</section>
+			<ul class="popup-content__info">
+				<li class="popup-item__image-wrapper"></li>
+				<li class="popup-item__name"></li>
+				<li class="popup-item__metadata"></li>
+				<li class="popup-item__content"></li>
+			</ul>
+		</main>
+	</article>
+
 	<aside class="portfolio__nav-wrapper">
 		<ul class="portfolio-nav__link-list">
 			<li class="portfolio-nav__item"><a href="#section--bowls" class="portfolio-nav__link">Bowls</a></li>
@@ -50,6 +62,7 @@ menu: 1
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ bowl.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ bowl.clay | capitalize }}</span>, <span>{{ bowl.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ bowl.content }}</li>
 			</ul>
 			{% endfor %} <!-- end 'for bowl in bowls' -->
 		</div>
@@ -78,6 +91,7 @@ menu: 1
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ jar.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ jar.clay | capitalize }}</span>, <span>{{ jar.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ jar.content }}</li>
 			</ul>
 			{% endfor %}
 		<div class="portfolio-data-wrapper">
@@ -107,6 +121,7 @@ menu: 1
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ mug.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ mug.clay | capitalize }}</span>, <span>{{ mug.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ mug.content }}</li>
 			</ul>
 			{% endfor %}
 		</div>
@@ -136,6 +151,7 @@ menu: 1
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ planter.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ planter.clay | capitalize }}</span>, <span>{{ planter.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ planter.content }}</li>
 			</ul>
 			{% endfor %}
 		</div>
@@ -165,6 +181,7 @@ menu: 1
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ plate.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ plate.clay | capitalize }}</span>, <span>{{ plate.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ plate.content }}</li>
 			</ul>
 			{% endfor %}
 		</div>
@@ -194,6 +211,7 @@ menu: 1
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ vase.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ vase.clay | capitalize }}</span>, <span>{{ vase.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ vase.content }}</li>
 			</ul>
 			{% endfor %}
 		</div>
