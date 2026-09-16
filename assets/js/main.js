@@ -1,7 +1,7 @@
 // Main JS file
 
 // left and right buttons on image carousels
-if (document.querySelector('.portfolio-wrapper')) {
+if (document.querySelector('.portfolio-wrapper') || document.querySelector('.popup-wrapper')) {
 	let rightArrows = document.querySelectorAll('.js-nav-right');
 	let leftArrows = document.querySelectorAll('.js-nav-left');
 	let viewports = document.querySelectorAll('.portfolio-metadata__carousel-viewport');
@@ -59,7 +59,6 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		modalItemName.textContent = portfolioItemName.textContent;
 		modalMetadata.innerHTML = portfolioMetadata.innerHTML;
 		modalContent.innerHTML = portfolioContent.innerHTML;
-
 	}
 
 	function hidePopUp() {
@@ -69,4 +68,19 @@ if (document.querySelector('.popup-bg-wrapper')) {
 
 	portfolioItem.addEventListener('click', displayPopUp);
 	xButton.addEventListener('click', hidePopUp);
+
+
+	/***/
+
+	let portfolioRealItems = document.querySelectorAll('.portfolio__metadata-wrapper');
+
+	function clickRealItem() {
+		console.log(this.children[1]);
+		popUpWrapper.style.display = "flex";
+	}
+
+	for (let item of portfolioRealItems) {
+		item.addEventListener('click', clickRealItem);
+	}
 }
+

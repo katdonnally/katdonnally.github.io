@@ -3,6 +3,14 @@
 @use '../vars/fonts' as fonts;
 
 
+.popup-wrapper {
+	scroll-snap-type: y mandatory;
+	* {
+		scrollbar-color: transparent transparent; /* thumb & track color */
+		scrollbar-width: 0;
+	}
+}
+
 /* 1. Portfolio Item Styles: */
 
 .popup-dummy-wrapper {
@@ -40,7 +48,7 @@
 
 // main - dark background
 .popup-bg-wrapper {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	display: none;

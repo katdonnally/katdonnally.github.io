@@ -8,6 +8,8 @@ menu: 1
 {% assign bowls = site.bowls | where: "show", "true" %}
 {% assign bowl = bowls[0] %}
 
+<main class="popup-wrapper">
+
 <h1>Popup</h1>
 
 <ul class="popup-dummy-wrapper">
@@ -22,6 +24,34 @@ menu: 1
 	
 </ul>
 
+<!-- BOWLS -->
+<article class="portfolio__section--bowls" id="section--bowls">
+	<h2 class="portfolio-section__title" >Bowls</h2>
+	<div class="portfolio-section__data-wrapper">
+		{% for bowl in bowls %}
+		<ul class="portfolio__metadata-wrapper" >
+			<!-- images -->
+			<li class="portfolio-metadata__carousel-wrapper">
+				<div class="js-nav-left">&lsaquo;</div>
+				<div class="js-nav-right">&rsaquo;</div>
+				<ul class="portfolio-metadata__carousel-viewport">
+					{% for images in bowl.image-set %}
+					<li class="portfolio-metadata__images" tabindex="0">
+						<img loading="eager"
+							 src="{{ 'assets/img/pottery/bowls/600/' | append: images.medium | relative_url}}"
+							 alt="{{ bowl.name }}"
+						/> 
+					</li> <!-- end image -->
+					{% endfor %} <!-- end images in bowl.image-set -->
+				</ul> <!-- end carousel viewport -->
+			</li> <!-- end images -->
+			<li class="portfolio-metadata__name">{{ bowl.name }}</li>
+			<li class="portfolio-metadata__details"><span>{{ bowl.clay | capitalize }}</span>, <span>{{ bowl.year }}</span></li>
+		</ul>
+		{% endfor %} <!-- end 'for bowl in bowls' -->
+	</div>
+</article> <!-- end bowls -->
+
 
 <main class="popup-bg-wrapper">
 	<main class="popup-content-wrapper">
@@ -33,4 +63,6 @@ menu: 1
 			<li class="popup-item__content"></li>
 		</ul>
 	</main>
+</main>
+
 </main>
