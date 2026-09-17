@@ -24,6 +24,8 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		imageList.innerHTML = "";
 	}
 
+	/* 2. Functions: */
+
 	// show popup & navigate popup arrows
 	function clickRealItem() {
 		popUpWrapper.style.display = "flex";
@@ -47,7 +49,6 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		imageList.innerHTML = carouselViewport.innerHTML;
 
 		// popup navigation:
-
 		let rightArrow = document.querySelector('.popup-nav-right');
 		let leftArrow = document.querySelector('.popup-nav-left');
 		let viewport = document.querySelector('.popup-item__carousel-viewport');
@@ -74,11 +75,13 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		leftArrow.addEventListener('touchstart', toTheStart);
 	}
 
-	// add popup event listener to all items
+	/* 3. Event Listeners: */
+
+	// popup comes up on click
 	for (let item of portfolioRealItems) {
 		item.addEventListener('click', clickRealItem);
 	}
 
-	// add event listener to popup X button
+	// popup closes on clicking X
 	xButton.addEventListener('click', hidePopUp);
 }
