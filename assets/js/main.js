@@ -47,6 +47,9 @@ if (document.querySelector('.popup-bg-wrapper')) {
 	function hidePopUp() {
 		popUpWrapper.style.display = "none";
 		modalItemName.textContent = "";
+
+		let imageList = document.querySelector('.popup-item__image-list');
+		imageList.innerHTML = "";
 	}
 
 	function clickRealItem() {
