@@ -37,13 +37,15 @@ if (document.querySelector('.popup-bg-wrapper')) {
 	let xButton = document.querySelector('.popup-content__x-button');
 
 	// popup content
-	let modalImageWrapper = document.querySelector('.popup-item__image-wrapper');
+	let modalImageWrapper = document.querySelector('.popup-item__carousel-wrapper');
 	let modalItemName = document.querySelector('.popup-item__name');
 	let modalMetadata = document.querySelector('.popup-item__metadata');
 	let modalContent = document.querySelector('.popup-item__content');
 
+	// items in portfolio
 	let portfolioRealItems = document.querySelectorAll('.portfolio__metadata-wrapper');
 
+	// functions
 	function hidePopUp() {
 		popUpWrapper.style.display = "none";
 		modalItemName.textContent = "";
@@ -76,7 +78,7 @@ if (document.querySelector('.popup-bg-wrapper')) {
 			li.classList.add("popup-item__images");
 			imageList.appendChild(li);
 		}
-	}
+	} // end function
 
 	for (let item of portfolioRealItems) {
 		item.addEventListener('click', clickRealItem);
