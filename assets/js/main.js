@@ -66,8 +66,16 @@ if (document.querySelector('.popup-bg-wrapper')) {
 
 		// images
 		let carouselWrapper = this.children[0];
-		console.log(carouselWrapper);
-		modalImageWrapper.innerHTML = carouselWrapper.innerHTML;
+		let carouselViewport = carouselWrapper.children[2];
+		let viewportClone = carouselViewport.cloneNode(true);
+		let viewportImages = viewportClone.children;
+		let imageList = document.querySelector('.popup-item__image-list');
+
+		for (let li of viewportImages) {
+			li.classList.remove("portfolio-metadata__images");
+			li.classList.add("popup-item__images");
+			imageList.appendChild(li);
+		}
 	}
 
 	for (let item of portfolioRealItems) {
@@ -76,4 +84,3 @@ if (document.querySelector('.popup-bg-wrapper')) {
 
 	xButton.addEventListener('click', hidePopUp);
 }
-
