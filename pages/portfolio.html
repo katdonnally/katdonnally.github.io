@@ -24,7 +24,7 @@ menu: 1
 					<div class="popup-nav-left">&lsaquo;</div>
 					<div class="popup-nav-right">&rsaquo;</div>
 					<ul class="popup-item__carousel-viewport">
-						<!-- insert <li><img</li> w/ images in them -->
+						<!-- insert <li><img><div></li> w/ images in them -->
 					</ul>
 				</li>
 				<li class="popup-item__name"></li>
@@ -62,6 +62,7 @@ menu: 1
 								 src="{{ 'assets/img/pottery/bowls/600/' | append: images.medium | relative_url}}"
 								 alt="{{ bowl.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ bowl.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in bowl.image-set -->
 					</ul> <!-- end carousel viewport -->
