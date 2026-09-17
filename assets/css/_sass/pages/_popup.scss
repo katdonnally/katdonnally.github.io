@@ -94,14 +94,14 @@
 // ul
 .popup-content__info {
 	display: grid;
-	grid-template-areas: "img title"
-						 "img year"
-						 "img description"
-						 "... description";
+	grid-template-areas: "img . title"
+						 "img . year"
+						 "img . description"
+						 "... . description";
 	grid-template-rows: auto auto auto 1fr;
-	grid-template-columns: auto 1fr;
+	grid-template-columns: auto 2rem 1fr;
 	list-style: none;
-	padding: 1.5rem;
+	padding: 2rem;
 	margin: 0;
 	li {
 		margin-left: 0;
