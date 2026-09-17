@@ -1,7 +1,7 @@
 // Main JS file
 
 // left and right buttons on image carousels
-if (document.querySelector('.portfolio-wrapper') || document.querySelector('.popup-wrapper')) {
+if (document.querySelector('.portfolio-wrapper')) {
 	let rightArrows = document.querySelectorAll('.js-nav-right');
 	let leftArrows = document.querySelectorAll('.js-nav-left');
 	let viewports = document.querySelectorAll('.portfolio-metadata__carousel-viewport');
