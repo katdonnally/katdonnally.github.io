@@ -1,43 +1,14 @@
 // Main JS file
 
-// left and right buttons on image carousels
-if (document.querySelector('.portfolio-wrapper')) {
-	let rightArrows = document.querySelectorAll('.js-nav-right');
-	let leftArrows = document.querySelectorAll('.js-nav-left');
-	let viewports = document.querySelectorAll('.portfolio-metadata__carousel-viewport');
-
-	for (let i=0; i<rightArrows.length; i++) {
-		let viewport = viewports[i];
-		let num = viewport.childElementCount;
-		let viewportContentsWidth = viewport.scrollWidth;
-		let translateNum = viewportContentsWidth / num;
-
-		function toTheEnd() {
-			if (viewport.scrollLeft <= viewportContentsWidth) {
-				viewport.scrollLeft += translateNum;
-			}
-		}
-
-		function toTheStart() {
-			if (viewport.scrollLeft >= 0) {
-				viewport.scrollLeft -= translateNum;
-			}
-		}
-
-		rightArrows[i].addEventListener('click', toTheEnd);
-		leftArrows[i].addEventListener('click', toTheStart);
-		rightArrows[i].addEventListener('touchstart', toTheEnd);
-		leftArrows[i].addEventListener('touchstart', toTheStart);
-	}
-}
-
 // popup for portfolio items
 if (document.querySelector('.popup-bg-wrapper')) {
-	// popup navigation
+	/* 1. Variables: */
+
+	// navigation
 	let popUpWrapper = document.querySelector('.popup-bg-wrapper');
 	let xButton = document.querySelector('.popup-content__x-button');
 
-	// popup content
+	// content of item
 	let modalImageWrapper = document.querySelector('.popup-item__carousel-wrapper');
 	let modalItemName = document.querySelector('.popup-item__name');
 	let modalMetadata = document.querySelector('.popup-item__metadata');
