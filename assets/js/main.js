@@ -72,15 +72,8 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		// images
 		let carouselWrapper = this.children[0];
 		let carouselViewport = carouselWrapper.children[2];
-		let viewportClone = carouselViewport.cloneNode(true);
-		let viewportImages = viewportClone.children;
 		let imageList = document.querySelector('.popup-item__carousel-viewport');
-
-		for (let li of viewportImages) {
-			li.classList.remove("portfolio-metadata__images");
-			li.classList.add("popup-item__images");
-			imageList.appendChild(li);
-		}
+		imageList.innerHTML = carouselViewport.innerHTML;
 
 		// popup navigation:
 
