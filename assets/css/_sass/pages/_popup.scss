@@ -91,6 +91,7 @@
 	}
 }
 
+// ul
 .popup-content__info {
 	display: grid;
 	grid-template-areas: "img title"
@@ -102,21 +103,46 @@
 	list-style: none;
 	padding: 1.5rem;
 	margin: 0;
-	// border: 2px solid red;
 	li {
-		// border: 2px solid blue;
 		margin-left: 0;
 	}
 }
 
+
+// li
 .popup-item__image-wrapper {
 	position: relative;
 	grid-area: img;
-	height: 500px;
-	padding-right: 2rem;
+	border: 4px solid black;
+	position: relative;
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+// ul
+.popup-item__image-list {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+// li
+.popup-item__images {
+	position: relative;
+	width: 100%;
+	scroll-snap-align: center;
+	flex-shrink: 0;
 	img {
-		height: 100%;
-		border: 4px solid black;
+		width: 100%;
+		scroll-snap-align: center;
+		overflow-x: scroll;
 	}
 }
 
