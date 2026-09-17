@@ -31,39 +31,6 @@ if (document.querySelector('.portfolio-wrapper') || document.querySelector('.pop
 	}
 }
 
-// popup navigation
-if (document.querySelector('.portfolio-wrapper') || document.querySelector('.popup-wrapper')) {
-
-	let rightArrow = document.querySelector('.popup-nav-right');
-	let leftArrow = document.querySelector('.popup-nav-left');
-	let viewport = document.querySelector('.popup-item__carousel-viewport');
-
-	console.log(rightArrow);
-	console.log(leftArrow);
-	console.log(viewport);
-
-	let num = viewport.childElementCount;
-	let viewportContentsWidth = viewport.scrollWidth;
-	let translateNum = viewportContentsWidth / num;	
-
-	function toTheEnd() {
-		if (viewport.scrollLeft <= viewportContentsWidth) {
-			viewport.scrollLeft += translateNum;
-		}
-	}
-	function toTheStart() {
-		if (viewport.scrollLeft >= 0) {
-				viewport.scrollLeft -= translateNum;
-		}
-	}
-
-	rightArrow.addEventListener('click', toTheEnd);
-	leftArrow.addEventListener('click', toTheStart);
-	rightArrow.addEventListener('touchstart', toTheEnd);
-	leftArrow.addEventListener('touchstart', toTheStart);
-}
-
-
 // popup for portfolio items
 if (document.querySelector('.popup-bg-wrapper')) {
 	// popup navigation
@@ -79,15 +46,15 @@ if (document.querySelector('.popup-bg-wrapper')) {
 	// items in portfolio
 	let portfolioRealItems = document.querySelectorAll('.portfolio__metadata-wrapper');
 
-	// functions
+	// hide popup
 	function hidePopUp() {
 		popUpWrapper.style.display = "none";
 		let imageList = document.querySelector('.popup-item__carousel-viewport');
 		imageList.innerHTML = "";
 	}
 
+	// show popup & navigate popup arrows
 	function clickRealItem() {
-		// show popup
 		popUpWrapper.style.display = "flex";
 
 		// title
@@ -114,9 +81,36 @@ if (document.querySelector('.popup-bg-wrapper')) {
 			li.classList.add("popup-item__images");
 			imageList.appendChild(li);
 		}
+
+		// popup navigation:
+
+		let rightArrow = document.querySelector('.popup-nav-right');
+		let leftArrow = document.querySelector('.popup-nav-left');
+		let viewport = document.querySelector('.popup-item__carousel-viewport');
+		let num = viewport.childElementCount;
+		let viewportContentsWidth = viewport.scrollWidth;
+		let translateNum = viewportContentsWidth / num;	
+
+		function toTheEnd() {
+			if (viewport.scrollLeft <= viewportContentsWidth) {
+				viewport.scrollLeft += translateNum;
+			}
+		}
+
+		function toTheStart() {
+			if (viewport.scrollLeft >= 0) {
+				viewport.scrollLeft -= translateNum;
+			}
+		}
+
+		// popup arrows listening
+		rightArrow.addEventListener('click', toTheEnd);
+		leftArrow.addEventListener('click', toTheStart);
+		rightArrow.addEventListener('touchstart', toTheEnd);
+		leftArrow.addEventListener('touchstart', toTheStart);
 	}
 
-	// add event listener to all items
+	// add popup event listener to all items
 	for (let item of portfolioRealItems) {
 		item.addEventListener('click', clickRealItem);
 	}
