@@ -2,48 +2,7 @@
 @use '../vars/colors' as colors;
 @use '../vars/fonts' as fonts;
 
-
-.popup-wrapper {
-	scroll-snap-type: y mandatory;
-	* {
-		scrollbar-color: transparent transparent; /* thumb & track color */
-		scrollbar-width: 0;
-	}
-}
-
 /* 1. Portfolio Item Styles: */
-
-.popup-dummy-wrapper {
-	height: 400px;
-	width: 400px;
-	background-color: pink;
-	list-style-type: none;
-	padding: 1rem;
-	li {
-
-	}
-}
-
-.dummy-item__image-wrapper {
-	img {
-		height: 300px;
-	}
-}
-
-.dummy-item__name {
-	span {
-
-	}
-}
-
-.dummy-item__metadata {
-
-}
-
-.dummy-item__content {
-
-}
-
 /* 2. Popup Styles: */
 
 // main - dark background
