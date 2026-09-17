@@ -16,7 +16,11 @@ html {
 	scroll-snap-type: y mandatory;
 	* {
 		scrollbar-color: transparent transparent; /* thumb & track color */
-		scrollbar-width: 0;
+		scrollbar-width: none;
+		scroll-margin: 0;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 }
