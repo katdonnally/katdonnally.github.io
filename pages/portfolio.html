@@ -16,6 +16,24 @@ menu: 1
 	{% assign plates = site.plates | where: "show", "true" %}
 	{% assign vases = site.vases | where: "show", "true" %}
 
+	<article class="popup-bg-wrapper">
+		<main class="popup-content-wrapper">
+			<section class="popup-content__x-button">&times;</section>
+			<ul class="popup-content__info">
+				<li class="popup-item__carousel-wrapper">
+					<div class="popup-nav-left">&lsaquo;</div>
+					<div class="popup-nav-right">&rsaquo;</div>
+					<ul class="popup-item__carousel-viewport">
+						<!-- insert <li><img><div></li> w/ images in them -->
+					</ul>
+				</li>
+				<li class="popup-item__name"></li>
+				<li class="popup-item__metadata"></li>
+				<li class="popup-item__content"></li>
+			</ul>
+		</main>
+	</article>
+
 	<aside class="portfolio__nav-wrapper">
 		<ul class="portfolio-nav__link-list">
 			<li class="portfolio-nav__item"><a href="#section--bowls" class="portfolio-nav__link">Bowls</a></li>
@@ -44,12 +62,14 @@ menu: 1
 								 src="{{ 'assets/img/pottery/bowls/600/' | append: images.medium | relative_url}}"
 								 alt="{{ bowl.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ bowl.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in bowl.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ bowl.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ bowl.clay | capitalize }}</span>, <span>{{ bowl.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ bowl.content }}</li>
 			</ul>
 			{% endfor %} <!-- end 'for bowl in bowls' -->
 		</div>
@@ -72,12 +92,14 @@ menu: 1
 								 src="{{ 'assets/img/pottery/jars/600/' | append: images.medium | relative_url}}"
 								 alt="{{ jar.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ jar.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in jar.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ jar.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ jar.clay | capitalize }}</span>, <span>{{ jar.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ jar.content }}</li>
 			</ul>
 			{% endfor %}
 		<div class="portfolio-data-wrapper">
@@ -101,12 +123,14 @@ menu: 1
 								 src="{{ 'assets/img/pottery/mugs/600/' | append: images.medium | relative_url}}"
 								 alt="{{ mugs.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ mug.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in mug.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ mug.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ mug.clay | capitalize }}</span>, <span>{{ mug.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ mug.content }}</li>
 			</ul>
 			{% endfor %}
 		</div>
@@ -129,13 +153,15 @@ menu: 1
 							<img loading="lazy"
 								 src="{{ 'assets/img/pottery/planters/600/' | append: images.medium | relative_url}}"
 								 alt="{{ planter.name }}"
-							/> 
+							/>
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ planter.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in planter.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ planter.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ planter.clay | capitalize }}</span>, <span>{{ planter.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ planter.content }}</li>
 			</ul>
 			{% endfor %}
 		</div>
@@ -159,12 +185,14 @@ menu: 1
 								 src="{{ 'assets/img/pottery/plates/600/' | append: images.medium | relative_url}}"
 								 alt="{{ plate.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ plate.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in planter.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ plate.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ plate.clay | capitalize }}</span>, <span>{{ plate.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ plate.content }}</li>
 			</ul>
 			{% endfor %}
 		</div>
@@ -188,12 +216,14 @@ menu: 1
 								 src="{{ 'assets/img/pottery/vases/600/' | append: images.medium | relative_url}}"
 								 alt="{{ vase.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ vase.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in vase.image-set -->
 					</ul> <!-- end carousel viewport -->
 				</li> <!-- end images -->
 				<li class="portfolio-metadata__name">{{ vase.name }}</li>
 				<li class="portfolio-metadata__details"><span>{{ vase.clay | capitalize }}</span>, <span>{{ vase.year }}</span></li>
+				<li class="portfolio-metadata__content">{{ vase.content }}</li>
 			</ul>
 			{% endfor %}
 		</div>
