@@ -17,13 +17,17 @@ if (document.querySelector('.popup-bg-wrapper')) {
 	// items in portfolio
 	let portfolioRealItems = document.querySelectorAll('.portfolio__metadata-wrapper');
 
-	// hide popup
+
+	/* 2. Functions: */
+
+	// hide popup w/ X button
 	function hidePopUp() {
 		popUpWrapper.style.display = "none";
 		let imageList = document.querySelector('.popup-item__carousel-viewport');
 		imageList.innerHTML = "";
 	}
 
+	// hide popup w/ background outside modal
 	function hideByBackground() {
 		if (event.target == popUpWrapper) {
 			popUpWrapper.style.display = "none";
@@ -31,8 +35,6 @@ if (document.querySelector('.popup-bg-wrapper')) {
 			imageList.innerHTML = "";
 		}
 	}
-
-	/* 2. Functions: */
 
 	// show popup & navigate popup arrows
 	function clickRealItem() {
@@ -64,12 +66,14 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		let viewportContentsWidth = viewport.scrollWidth;
 		let translateNum = viewportContentsWidth / num;	
 
+		// scrolling
 		function toTheEnd() {
 			if (viewport.scrollLeft <= viewportContentsWidth) {
 				viewport.scrollLeft += translateNum;
 			}
 		}
 
+		// scrolling
 		function toTheStart() {
 			if (viewport.scrollLeft >= 0) {
 				viewport.scrollLeft -= translateNum;
