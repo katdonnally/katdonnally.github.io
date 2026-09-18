@@ -120,11 +120,14 @@ ul.portfolio__metadata-wrapper {
 	padding-left: 0;
 	padding-top: 1.25rem !important;
 	list-style-type: none;
+	color: black;
+	transition: color .3s;
 	@media screen and (min-width: 600px) and (max-width: 767px) {
 		max-width: 300px;
 	}
 	&:hover {
 		cursor: pointer;
+		color: colors.$african-violet;
 	}
 }
 
