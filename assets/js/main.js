@@ -84,4 +84,5 @@ if (document.querySelector('.popup-bg-wrapper')) {
 
 	// popup closes on clicking X
 	xButton.addEventListener('click', hidePopUp);
+	popUpWrapper.addEventListener('click', hidePopUp);
 }
