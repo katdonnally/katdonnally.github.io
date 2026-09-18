@@ -82,6 +82,7 @@
 							 "description";
 		grid-template-rows: auto auto auto auto;
 		grid-template-columns: 100%;
+		align-items: start;
 	}
 }
 
@@ -93,13 +94,12 @@
 	grid-area: img;
 	position: relative;
 	min-width: 250px;
-	//max-width: 400px;
 	padding: 0;
 	margin: 0;
 	list-style: none;
 	@media screen and (max-width: 600px) {
 		justify-self: center;
-		//width: calc(50% - 4rem);
+		margin-bottom: 1rem;
 	}
 }
 
@@ -176,6 +176,7 @@
 	padding-bottom: 1rem;
 	@media screen and (max-width: 600px) {
 		font-size: 2rem;
+		padding-bottom: .5rem;
 	}
 }
 
@@ -183,6 +184,10 @@
 	grid-area: year;
 	font-family: fonts.$inconsolata;
 	font-size: 1.5rem;
+	@media screen and (max-width: 600px) {
+		font-size: 1.25rem;
+		line-height: 1.25rem;
+	}
 }
 
 .popup-item__content {
@@ -192,4 +197,10 @@
 	border-top: 2px solid colors.$dim-gray;
 	font-size: 1.0625rem;
 	color: colors.$dim-gray;
+	@media screen and (max-width: 600px) {
+		padding-top: .5rem;
+		margin-top: 0;
+		font-size: 1rem;
+		border-top: 0px solid colors.$dim-gray;
+	}
 }
