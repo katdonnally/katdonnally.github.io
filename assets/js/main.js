@@ -24,6 +24,14 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		imageList.innerHTML = "";
 	}
 
+	function hideByBackground() {
+		if (event.target == popUpWrapper) {
+			popUpWrapper.style.display = "none";
+			let imageList = document.querySelector('.popup-item__carousel-viewport');
+			imageList.innerHTML = "";
+		}
+	}
+
 	/* 2. Functions: */
 
 	// show popup & navigate popup arrows
@@ -82,7 +90,7 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		item.addEventListener('click', clickRealItem);
 	}
 
-	// popup closes on clicking X
+	// popup closes on clicking X or background outside of modal
 	xButton.addEventListener('click', hidePopUp);
-	popUpWrapper.addEventListener('click', hidePopUp);
+	popUpWrapper.addEventListener('click', hideByBackground);
 }
