@@ -26,6 +26,12 @@
 	max-width: 900px;
 	background-color: white;
 	border: 4px solid black;
+	@media screen and (max-width: 600px) {
+		height: 100vh;
+		width: 100vw;
+		border: 0px solid black;
+	}
+
 }
 
 .popup-content__x-button {
@@ -62,6 +68,14 @@
 	margin: 0;
 	li {
 		margin-left: 0;
+	}
+	@media screen and (max-width: 600px) {
+		grid-template-areas: "img"
+							 "title"
+							 "year"
+							 "description";
+		grid-template-rows: auto auto auto auto;
+		grid-template-columns: 1fr;
 	}
 }
 
