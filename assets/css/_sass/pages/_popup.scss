@@ -22,13 +22,13 @@
 .popup-content-wrapper {
 	position: relative;
 	display: flex;
-	width: 80vw;
+	//width: 80vw;
 	max-width: 900px;
 	background-color: white;
 	border: 4px solid black;
 	@media screen and (max-width: 600px) {
 		height: 100vh;
-		width: 100vw;
+		width: 100%;
 		border: 0px solid black;
 	}
 
@@ -51,6 +51,12 @@
 	&:hover {
 		cursor: pointer;
 		background-color: colors.$african-violet;
+	}
+	@media screen and (max-width: 600px) {
+		font-size: 1rem;
+		width: 2rem;
+		height: 2rem;
+		line-height: 2rem;
 	}
 }
 
@@ -75,7 +81,7 @@
 							 "year"
 							 "description";
 		grid-template-rows: auto auto auto auto;
-		grid-template-columns: 1fr;
+		grid-template-columns: 100%;
 	}
 }
 
@@ -87,10 +93,14 @@
 	grid-area: img;
 	position: relative;
 	min-width: 250px;
-	max-width: 400px;
+	//max-width: 400px;
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	@media screen and (max-width: 600px) {
+		justify-self: center;
+		//width: calc(50% - 4rem);
+	}
 }
 
 [class*="popup-nav"] {
@@ -122,7 +132,6 @@
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
 	min-width: 300px;
-	max-width: 400px;
 	padding: 0;
 	margin: 0;
 	padding-bottom: 2rem;
@@ -130,6 +139,11 @@
 	list-style: none;
 	li {
 		max-width: 400px;
+	}
+	@media screen and (max-width: 600px) {
+		li {
+			max-width: 100%;
+		}
 	}
 }
 
@@ -160,6 +174,9 @@
 	font-size: 2.5rem;
 	line-height: 1.125;
 	padding-bottom: 1rem;
+	@media screen and (max-width: 600px) {
+		font-size: 2rem;
+	}
 }
 
 .popup-item__metadata {
