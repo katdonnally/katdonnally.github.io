@@ -144,6 +144,8 @@
 	font-family: fonts.$oswald;
 	font-weight: 700;
 	font-size: 2.5rem;
+	line-height: 1.125;
+	padding-bottom: 1rem;
 }
 
 .popup-item__metadata {
@@ -154,12 +156,9 @@
 
 .popup-item__content {
 	grid-area: description;
-	color: colors.$dim-gray;
 	padding-top: 1.25rem;
 	margin-top: 1.25rem;
 	border-top: 2px solid colors.$dim-gray;
-	p {
-		font-size: 1.25rem;
-		font-style: italic;
-	}
+	font-size: 1.0625rem;
+	color: colors.$dim-gray;
 }
