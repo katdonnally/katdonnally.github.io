@@ -2,8 +2,7 @@
 @use '../vars/colors' as colors;
 @use '../vars/fonts' as fonts;
 
-/* 1. Portfolio Item Styles: */
-/* 2. Popup Styles: */
+/* Portfolio Page Image Popup Styles: */
 
 // main - dark background
 .popup-bg-wrapper {
@@ -104,19 +103,20 @@
 // ul
 .popup-item__carousel-viewport {
 	position: relative;
-	border: 4px solid black;
-	position: relative;
 	display: flex;
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
 	min-width: 300px;
-	max-width: 500px;
+	max-width: 400px;
 	padding: 0;
 	margin: 0;
 	padding-bottom: 2rem;
+	border: 4px solid black;
 	list-style: none;
-
+	li {
+		max-width: 400px;
+	}
 }
 
 // li
@@ -128,7 +128,6 @@
 	display: flex;
 	margin: 0;
 	padding: 0;
-
 	img {
 		width: 100%;
 		scroll-snap-align: center;
