@@ -198,6 +198,7 @@ li.portfolio-metadata__image {
 	width: 100%;
 	scroll-snap-align: center;
 	flex-shrink: 0;
+	overflow: clip;
 	img {
 		width: 100%;
 		scroll-snap-align: center;

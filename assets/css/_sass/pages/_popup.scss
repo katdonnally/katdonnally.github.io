@@ -138,6 +138,7 @@
 	list-style: none;
 	li {
 		max-width: 400px;
+		overflow: visible;
 	}
 	@media screen and (max-width: 600px) {
 		li {
