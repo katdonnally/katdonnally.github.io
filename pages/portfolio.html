@@ -92,6 +92,7 @@ menu: 1
 								 src="{{ 'assets/img/pottery/jars/600/' | append: images.medium | relative_url}}"
 								 alt="{{ jar.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ jar.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in jar.image-set -->
 					</ul> <!-- end carousel viewport -->
@@ -122,6 +123,7 @@ menu: 1
 								 src="{{ 'assets/img/pottery/mugs/600/' | append: images.medium | relative_url}}"
 								 alt="{{ mugs.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ mug.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in mug.image-set -->
 					</ul> <!-- end carousel viewport -->
@@ -151,7 +153,8 @@ menu: 1
 							<img loading="lazy"
 								 src="{{ 'assets/img/pottery/planters/600/' | append: images.medium | relative_url}}"
 								 alt="{{ planter.name }}"
-							/> 
+							/>
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ planter.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in planter.image-set -->
 					</ul> <!-- end carousel viewport -->
@@ -182,6 +185,7 @@ menu: 1
 								 src="{{ 'assets/img/pottery/plates/600/' | append: images.medium | relative_url}}"
 								 alt="{{ plate.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ plate.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in planter.image-set -->
 					</ul> <!-- end carousel viewport -->
@@ -212,6 +216,7 @@ menu: 1
 								 src="{{ 'assets/img/pottery/vases/600/' | append: images.medium | relative_url}}"
 								 alt="{{ vase.name }}"
 							/> 
+							<div class="portfolio-images__count" >{{ forloop.index }} / {{ vase.image-set | size }}</div>
 						</li> <!-- end image -->
 						{% endfor %} <!-- end images in vase.image-set -->
 					</ul> <!-- end carousel viewport -->
