@@ -1,6 +1,6 @@
-// Main JS file
+/* Main JS file */
 
-// popup for portfolio items
+/* Popup Window for Portfolio Items: */
 if (document.querySelector('.popup-bg-wrapper')) {
 	/* 1. Variables: */
 
@@ -15,8 +15,7 @@ if (document.querySelector('.popup-bg-wrapper')) {
 	let modalContent = document.querySelector('.popup-item__content');
 
 	// items in portfolio
-	let portfolioRealItems = document.querySelectorAll('.portfolio__metadata-wrapper');
-
+	let portfolioItems = document.querySelectorAll('.portfolio__metadata-wrapper');
 
 	/* 2. Functions: */
 
@@ -37,8 +36,10 @@ if (document.querySelector('.popup-bg-wrapper')) {
 	}
 
 	// show popup & navigate popup arrows
-	function clickRealItem() {
+	function clickPortfolioItem() {
 		popUpWrapper.style.display = "flex";
+
+		/* Popup Content: */
 
 		// title
 		let itemName = this.children[1];
@@ -58,7 +59,9 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		let imageList = document.querySelector('.popup-item__carousel-viewport');
 		imageList.innerHTML = carouselViewport.innerHTML;
 
-		// popup navigation:
+		/* Popup Navigation: */
+
+		// variables:
 		let rightArrow = document.querySelector('.popup-nav-right');
 		let leftArrow = document.querySelector('.popup-nav-left');
 		let viewport = document.querySelector('.popup-item__carousel-viewport');
@@ -66,21 +69,20 @@ if (document.querySelector('.popup-bg-wrapper')) {
 		let viewportContentsWidth = viewport.scrollWidth;
 		let translateNum = viewportContentsWidth / num;	
 
-		// scrolling
+		// functions:
 		function toTheEnd() {
 			if (viewport.scrollLeft <= viewportContentsWidth) {
 				viewport.scrollLeft += translateNum;
 			}
 		}
 
-		// scrolling
 		function toTheStart() {
 			if (viewport.scrollLeft >= 0) {
 				viewport.scrollLeft -= translateNum;
 			}
 		}
 
-		// popup arrows listening
+		// navigation event listeners:
 		rightArrow.addEventListener('click', toTheEnd);
 		leftArrow.addEventListener('click', toTheStart);
 		rightArrow.addEventListener('touchstart', toTheEnd);
@@ -90,11 +92,11 @@ if (document.querySelector('.popup-bg-wrapper')) {
 	/* 3. Event Listeners: */
 
 	// popup comes up on click
-	for (let item of portfolioRealItems) {
-		item.addEventListener('click', clickRealItem);
+	for (let item of portfolioItems) {
+		item.addEventListener('click', clickPortfolioItem);
 	}
 
 	// popup closes on clicking X or background outside of modal
 	xButton.addEventListener('click', hidePopUp);
 	popUpWrapper.addEventListener('click', hideByBackground);
-}
+} // end popup code
