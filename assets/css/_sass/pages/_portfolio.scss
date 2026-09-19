@@ -33,6 +33,12 @@ html {
 
 .portfolio__nav-wrapper {
 	position: relative;
+	padding-top: .25rem;
+}
+
+.portfolio-nav__cta {
+	font-style: italic;
+	color: colors.$dim-gray;
 }
 
 .portfolio-nav__title {
