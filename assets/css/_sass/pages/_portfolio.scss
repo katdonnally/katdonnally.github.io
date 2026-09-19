@@ -240,8 +240,10 @@ li.portfolio-metadata__image {
 	overflow: clip;
 	img {
 		width: 100%;
+		height: auto;
 		scroll-snap-align: center;
 		overflow-x: scroll;
+		aspect-ratio: 1 / 1;
 	}
 }
 
