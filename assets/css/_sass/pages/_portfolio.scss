@@ -37,6 +37,14 @@ html {
 
 .portfolio-nav__title {
 	font-family: fonts.$oswald;
+	font-weight: 500;
+	border-bottom: 1px solid black;
+	@media screen and (min-width: 500px) {
+		font-size: 2rem;
+	}
+	@media screen and (min-width: 900px) {
+		font-size: 2.5rem;
+	}
 }
 
 ul.portfolio-nav__link-list {
@@ -51,7 +59,7 @@ ul.portfolio-nav__link-list {
 li.portfolio-nav__item {
 	margin: .5rem;
 	padding: .5rem;
-	color: black; //colors.$dim-gray;
+	color: black;
 	font-weight: bold;
 	font-size: 1.5rem;
 	border: 2px solid black;
@@ -60,8 +68,11 @@ li.portfolio-nav__item {
 		color: colors.$african-violet;
 		border: 2px solid colors.$african-violet;
 	}
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 600px) {
 		font-size: 1rem;
+	}
+	@media screen and (min-width: 600px) and (max-width: 900px) {
+		font-size: 1.25rem;
 	}
 }
 
@@ -107,6 +118,9 @@ article[class*="portfolio__section"] {
 	font-family: fonts.$oswald;
 	font-weight: 500;
 	border-bottom: 1px solid black;
+	@media screen and (min-width: 500px) {
+		font-size: 2rem;
+	}
 	@media screen and (min-width: 900px) {
 		font-size: 2.5rem;
 	}
