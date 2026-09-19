@@ -58,17 +58,16 @@ ul.portfolio-nav__link-list {
 	flex-flow: row wrap;
 	margin: 0;
 	padding: 0;
-	max-width: 500px;
 	list-style-type: none;
 }
 
 li.portfolio-nav__item {
 	margin: .5rem;
-	padding: .5rem;
 	color: black;
 	font-weight: bold;
 	font-size: 1.5rem;
 	border: 2px solid black;
+	border-radius: 10px;
 	transition: color .3s, border .3s;
 	&:hover, &:focus {
 		color: colors.$african-violet;
@@ -83,6 +82,8 @@ li.portfolio-nav__item {
 }
 
 a.portfolio-nav__link {
+	display: block;
+	padding: .5rem;
 	color: black;
 	transition: color .3s;
 	&:hover {
@@ -139,7 +140,7 @@ article[class*="portfolio__section"] {
 	p:nth-of-type(2) {
 		margin-left: auto;
 		a {
-			color: black; // colors.$dim-gray;
+			color: black;
 			transition: color .3s;
 			&:hover {
 				color: colors.$african-violet;
