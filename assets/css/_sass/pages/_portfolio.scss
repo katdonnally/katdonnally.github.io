@@ -63,11 +63,13 @@ ul.portfolio-nav__link-list {
 
 li.portfolio-nav__item {
 	margin: .5rem;
+	margin-left: 0;
+	margin-right: 1rem;
 	color: black;
 	font-weight: bold;
 	font-size: 1.5rem;
 	border: 2px solid black;
-	border-radius: 10px;
+	border-radius: 6px;
 	transition: color .3s, border .3s;
 	&:hover, &:focus {
 		color: colors.$african-violet;
@@ -75,6 +77,7 @@ li.portfolio-nav__item {
 	}
 	@media screen and (max-width: 600px) {
 		font-size: 1rem;
+		margin-right: .75rem;
 	}
 	@media screen and (min-width: 600px) and (max-width: 900px) {
 		font-size: 1.25rem;
