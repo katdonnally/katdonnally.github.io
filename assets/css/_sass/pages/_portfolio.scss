@@ -166,7 +166,7 @@ article[class*="portfolio__section"] {
 	position: relative;
 	column-width: 300px;
 	break-inside: avoid-column;
-	column-gap: 1.5rem;
+	column-gap: .5rem;
 	ul {
 		break-inside: avoid-column;
 		li {
@@ -178,17 +178,18 @@ article[class*="portfolio__section"] {
 ul.portfolio__metadata-wrapper {
 	position: relative;
 	min-width: 250px;
-	padding-left: 0;
-	padding-top: 1.25rem !important;
+	padding: .75rem !important;
 	list-style-type: none;
 	color: black;
-	transition: color .3s;
+	transition: color .3s, border .3s;
+	border: 4px solid transparent;
 	@media screen and (min-width: 600px) and (max-width: 767px) {
 		max-width: 300px;
 	}
 	&:hover {
 		cursor: pointer;
 		color: colors.$african-violet;
+		border: 4px solid black;
 	}
 }
 
