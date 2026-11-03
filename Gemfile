@@ -13,7 +13,8 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
   # Allows modern @use statements and Dart Sass support
-  gem "jekyll-sass-converter", "~> 3.0" 
+  gem "jekyll-sass-converter", "~> 3.0"
+  gem "sass-embedded", "~> 1.0"
 end
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.5"
