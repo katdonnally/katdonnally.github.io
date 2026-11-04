@@ -10,7 +10,7 @@ image-set:
 clay: Iceman stoneware
 year: 2026
 order: 1
-show: yes
+show: no
 ---
 
 A closed-form white stoneware jar with knob, glazed with turquoise and an accent of a light flux glaze for movement.

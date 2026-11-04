@@ -9,7 +9,7 @@ image-set:
     large: pink-stripe-jar-dark-star-02-1200w.jpg
 clay: white speckle stoneware
 year: 2025
-show: yes
+show: no
 ---
 
 A pink & white striped jar with handles.
