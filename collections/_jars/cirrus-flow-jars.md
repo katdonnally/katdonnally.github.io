@@ -18,7 +18,7 @@ image-set:
     large: cirrus-flow-bubble-jar-02-1200w.jpg
 clay: Iceman stoneware
 year: 2025
-show: yes
+show: no
 ---
 
 Two jars&mdash;one closed-form, one two-part&mdash;adorned with Amaco's Cirrus Flow glaze, with taped negative space.

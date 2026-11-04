@@ -9,7 +9,7 @@ image-set:
     large: tiny-hearts-mug-02-1200w.jpg
 clay: Iceman stoneware
 year: 2026
-show: yes
+show: no
 ---
 
 A simple, straight-walled white mug decorated with a pattern of tiny black hearts, matching a black interior.

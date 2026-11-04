@@ -9,7 +9,7 @@ image-set:
     large: black-sugar-jar-02-02-1200w.jpg
 clay: Sheltowee stoneware
 year: 2026
-show: yes
+show: no
 ---
 
 A sparkly black jar in medium brown clay with a strap and a spoon, perfect for sugar or salt.

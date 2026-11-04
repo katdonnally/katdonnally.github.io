@@ -9,7 +9,7 @@ image-set:
     large: bee-jar-02-1200w.jpg
 clay: Iceman stoneware
 year: 2025
-show: yes
+show: no
 ---
 
 Bee underglaze transfers buzz around this closed-form jar, glazed with a yellow Celadon.

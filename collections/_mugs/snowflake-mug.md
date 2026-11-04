@@ -10,7 +10,7 @@ image-set:
 clay: Sheltowee stoneware
 year: 2025
 order: 1
-show: yes
+show: no
 ---
 
 A brown stoneware mug adorned with a white snowflake pattern and a wavy application of white glaze.

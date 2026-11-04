@@ -10,7 +10,7 @@ image-set:
 clay: Iceman stoneware
 year: 2024
 order: 1
-show: yes
+show: no
 ---
 
 A curvy planter in white stoneware painted with black and white stripes.

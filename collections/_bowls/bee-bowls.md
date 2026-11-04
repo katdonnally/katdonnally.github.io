@@ -10,7 +10,7 @@ image-set:
 clay: white stoneware
 year: 2024
 order: 1
-show: yes
+show: no
 ---
 
 A pair of yellow trinket bowls with bee underglaze transfers.
