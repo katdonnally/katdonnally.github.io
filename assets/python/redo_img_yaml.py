@@ -1,7 +1,8 @@
 orig = '''
-- sheltowee-geometric-mug-01.jpg
-- sheltowee-geometric-mug-02.jpg
-- fl-travel-mug-02.jpg'''
+- blue-black-oil-bottles-01.jpg
+- blue-black-oil-bottles-02.jpg
+- blue-black-oil-bottles-03.jpg
+- mottled-turquoise-mugs-04.jpg'''
 
 remove_chars = orig.replace("\n", "").replace("\t", "").replace("- ", "").replace(" ", "")
 
@@ -10,7 +11,7 @@ basenames = remove_chars.split(".jpg")[:-1]
 img_1 = basenames[0]
 img_2 = basenames[1]
 img_3 = basenames[2]
-# img_4 = basenames[3]
+img_4 = basenames[3]
 # img_5 = basenames[4]
 
 newnames = f'''image-set:
@@ -22,13 +23,12 @@ newnames = f'''image-set:
     large: {img_2}-1200w.jpg
   - small: {img_3}-400w.jpg
     medium: {img_3}-600w.jpg
-    large: {img_3}-1200w.jpg'''
-
-'''
+    large: {img_3}-1200w.jpg
   - small: {img_4}-400w.jpg
     medium: {img_4}-600w.jpg
-    large: {img_4}-1200w.jpg
-  - small: {img_5}-400w.jpg
+    large: {img_4}-1200w.jpg'''
+
+''' - small: {img_5}-400w.jpg
     medium: {img_5}-600w.jpg
     large: {img_5}-1200w.jpg'''
 
