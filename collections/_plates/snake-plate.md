@@ -10,7 +10,7 @@ image-set:
 clay: Iceman stoneware
 year: 2025
 order: 1
-show: yes
+show: no
 ---
 
 A black & white oval plate decorated with a snake underglaze transfer.
