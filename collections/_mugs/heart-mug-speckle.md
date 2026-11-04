@@ -9,7 +9,7 @@ image-set:
     large: heart-mug-02-1200w.jpg
 clay: Dark Star stoneware
 year: 2025
-show: yes
+show: no
 ---
 
 A speckled white stoneware mug with black hearts and black interior.

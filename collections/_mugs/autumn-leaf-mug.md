@@ -9,7 +9,7 @@ image-set:
     large: autumn-leaf-mug-02-1200w.jpg
 clay: Iceman stoneware
 year: 2025
-show: yes
+show: no
 ---
 
 A white stoneware mug, hand-painted with autumn-colored oak and maple leaves.

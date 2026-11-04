@@ -10,7 +10,7 @@ image-set:
 clay: Iceman stoneware
 year: 2026
 order: 1
-show: yes
+show: no
 ---
 
 A curvy white stoneware mug, painted with green glaze in a wavy pattern on the top half, and raw clay with dinosaur transfers adorns the bottom half.

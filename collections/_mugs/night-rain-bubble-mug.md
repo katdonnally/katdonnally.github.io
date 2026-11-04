@@ -10,7 +10,7 @@ image-set:
 clay: Iceman stoneware
 year: 2025
 order: 1
-show: yes
+show: no
 ---
 
 A sapphire blue bubble mug with light blue flux glaze along the top third.

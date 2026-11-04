@@ -9,7 +9,7 @@ image-set:
     large: peony-mug-02-1200w.jpg
 clay: Iceman stoneware
 year: 2026
-show: yes
+show: no
 ---
 
 Hand-painted pink peonies surround this mug on white stoneware with a pink interior.

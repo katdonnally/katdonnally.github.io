@@ -12,7 +12,7 @@ image-set:
     large: 266-dark-taped-mugs-03-1200w.jpg
 clay: umbria stoneware
 year: 2025
-show: yes
+show: no
 ---
 
 Two dark brown mugs with rich glaze combinations and taped-off negative spaces.

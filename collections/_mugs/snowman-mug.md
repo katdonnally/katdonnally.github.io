@@ -10,7 +10,7 @@ image-set:
 clay: Iceman stoneware
 year: 2025
 order: 1
-show: yes
+show: no
 ---
 
 A white mug depicting a hand-painted snowman on one side and a hand-painted gingerbread man on the other.

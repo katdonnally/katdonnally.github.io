@@ -12,7 +12,7 @@ image-set:
     large: cauldron-mugs-2025-1200w.jpg
 clay: Iceman stoneware
 year: 2025
-show: yes
+show: no
 ---
 
 A moody cauldron mug with black and red glazes.

@@ -1,5 +1,5 @@
 ---
-name: Cauldron mug with black and purple glaze
+name: Cauldron mugs
 image-set:
   - small: cauldron-mugs-2025-400w.jpg
     medium: cauldron-mugs-2025-600w.jpg
@@ -15,4 +15,4 @@ year: 2025
 show: yes
 ---
 
-A cauldron mug with moody black and purple glazes.
+A pair of cauldron mugs with moody black, purple, and red glazes.

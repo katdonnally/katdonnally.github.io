@@ -13,7 +13,7 @@ image-set:
 clay: Iceman stoneware
 year: 2025
 order: 1
-show: yes
+show: no
 ---
 
 A glossy black & gray travel mug.
